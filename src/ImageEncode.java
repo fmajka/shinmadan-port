@@ -12,46 +12,46 @@ import java.io.OutputStream;
 import javax.microedition.io.Connector;
 
 class ImageEncode {
-   Image image = null;
-   MediaImage mImage = null;
-   ImageStore store;
+//    Image image = null;
+//    MediaImage mImage = null;
+//    ImageStore store;
 
-   void setting(tohoSINMACanvas canvas) {
-      ImageEncoder imageEncoder = ImageEncoder.getEncoder("JPEG");
-      EncodedImage encodedImage = imageEncoder.encode(canvas, 0, 0, canvas.getWidth(), canvas.getHeight());
-      InputStream inputStream = encodedImage.getInputStream();
+//    void setting(tohoSINMACanvas canvas) {
+//       ImageEncoder imageEncoder = ImageEncoder.getEncoder("JPEG");
+//       EncodedImage encodedImage = imageEncoder.encode(canvas, 0, 0, canvas.getWidth(), canvas.getHeight());
+//       InputStream inputStream = encodedImage.getInputStream();
 
-      try {
-         OutputStream outputStream = Connector.openOutputStream("scratchpad:///0;pos=2000");
-         int read = inputStream.read();
-         outputStream.write((byte)read);
+//       try {
+//          OutputStream outputStream = Connector.openOutputStream("scratchpad:///0;pos=2000");
+//          int read = inputStream.read();
+//          outputStream.write((byte)read);
 
-         while (read >= 0) {
-            read = inputStream.read();
-            outputStream.write((byte)read);
-         }
+//          while (read >= 0) {
+//             read = inputStream.read();
+//             outputStream.write((byte)read);
+//          }
 
-         inputStream.close();
-         outputStream.flush();
-         outputStream.close();
-      } catch (IOException exception) {
-         return;
-      }
+//          inputStream.close();
+//          outputStream.flush();
+//          outputStream.close();
+//       } catch (IOException exception) {
+//          return;
+//       }
 
-      this.mImage = MediaManager.getImage("scratchpad:///0;pos=2000");
+//       this.mImage = MediaManager.getImage("scratchpad:///0;pos=2000");
 
-      try {
-         this.mImage.use();
-      } catch (ConnectionException exception) {
-         return;
-      }
+//       try {
+//          this.mImage.use();
+//       } catch (ConnectionException exception) {
+//          return;
+//       }
 
-      this.image = this.mImage.getImage();
+//       this.image = this.mImage.getImage();
 
-      try {
-         this.store = ImageStore.selectEntry();
-         ImageStore.addEntry(this.mImage);
-      } catch (InterruptedOperationException exception) {
-      }
-   }
+//       try {
+//          this.store = ImageStore.selectEntry();
+//          ImageStore.addEntry(this.mImage);
+//       } catch (InterruptedOperationException exception) {
+//       }
+//    }
 }

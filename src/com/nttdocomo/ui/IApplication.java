@@ -18,4 +18,8 @@ public abstract class IApplication {
     public void launch(int type, String[] args) {
 
     }
+
+    public void terminate() {
+        
+    }
 }

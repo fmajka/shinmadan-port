@@ -1,6 +1,12 @@
 package com.nttdocomo.ui;
 
 public class AudioPresenter implements MediaPresenter {
+
+    public static AudioPresenter getAudioPresenter() {
+        System.out.println("AudioPresenter.getAudioPresenter()");
+        return new AudioPresenter();
+    }
+
     // listener = tohoSINMACanvas
     @Override
     public void setMediaListener(MediaListener listener) {
@@ -19,14 +25,17 @@ public class AudioPresenter implements MediaPresenter {
         System.out.println("audioPresenter.play()");
     }
 
+    public void pause() {
+        
+    }
+
+    public void restart() {
+
+    }
+
     @Override
     public void stop() {
         System.out.println("audioPresenter.stop()");
-    }
-
-    public static AudioPresenter getAudioPresenter() {
-        System.out.println("AudioPresenter.getAudioPresenter()");
-        return new AudioPresenter();
     }
     
     public void setSound(MediaSound sound) {

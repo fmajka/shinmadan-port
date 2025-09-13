@@ -38,4 +38,20 @@ public abstract class Canvas extends Frame {
     public void processEvent(int type, int param) {
 
     }
+
+    /**
+     * This method returns the keypad state.
+     * Each bit position in the returned value corresponds to a key defined in the Display class. The correspondence between bits and keys is 1<<(key value defined in the Display class), The MSB corresponds to 31 and the LSB corresponds to 0. For example, the bit corresponding to KEY_0 is bit 0, The bit corresponding to KEY_1 is bit 1.
+     * The bit corresponding to the pressed key is set to 1, The bits corresponding to keys that are not pressed are set to 0.
+     * The application programmer can call this method during timer-driven processing, or Display.KEY_PRESSED_EVENT, Display.KEY_RELEASED_EVENTWhen an event occurs, call this method to get the state of multiple keys.
+     * If you call this method, whether the canvas is visible or not, The current keypad state is returned as the return value.
+
+     * [DoJa-3.0 (505iS) or later]
+     * This method returns the same result as calling getKeypadState(0)
+     * @return the keypad state
+     */
+    public int getKeypadState() {
+        // TODO: emulate keypresses?
+        return 0;
+    }
 }

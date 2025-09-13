@@ -35,6 +35,10 @@ public class Graphics {
 
     }
 
+    public void drawString(String text, int x, int y) {
+
+    }
+
     public void fillArc(int x, int y, int width, int height, int startAngle, int arcAngle) {
 
     }

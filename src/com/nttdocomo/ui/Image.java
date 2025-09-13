@@ -1,6 +1,6 @@
 package com.nttdocomo.ui;
 
-public class Image {
+public abstract class Image {
 
     /**
      *  Sets the alpha value of this image.
@@ -10,4 +10,6 @@ public class Image {
 
     }
 
+    // TODO: may need to do something with this
+    public abstract void dispose();
 }
