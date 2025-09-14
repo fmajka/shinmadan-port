@@ -1,5 +1,7 @@
 package com.nttdocomo.ui;
 
+import com.fmajka.compat.Context;
+
 public abstract class Canvas extends Frame {
     // processIMEEvent Used as the type argument to the method. 
     public static int IMA_CANCELED = 1;
@@ -14,7 +16,7 @@ public abstract class Canvas extends Frame {
      * @return a graphics object for drawing on the canvas.
      */
     public Graphics getGraphics() {
-        return new Graphics();
+        return Context.getGraphics();
     }
 
     /**

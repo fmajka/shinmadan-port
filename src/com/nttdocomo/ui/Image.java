@@ -1,6 +1,11 @@
 package com.nttdocomo.ui;
 
 public abstract class Image {
+    public final Object platformImage;
+
+    public Image(Object platformImage) {
+        this.platformImage = platformImage;
+    }
 
     /**
      *  Sets the alpha value of this image.
