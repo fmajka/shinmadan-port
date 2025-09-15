@@ -1,3 +1,5 @@
+package shinmadan;
+
 import com.nttdocomo.io.ConnectionException;
 import com.nttdocomo.system.ImageStore;
 import com.nttdocomo.system.InterruptedOperationException;

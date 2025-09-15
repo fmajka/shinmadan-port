@@ -1,3 +1,5 @@
+package shinmadan;
+
 import com.nttdocomo.ui.AudioPresenter;
 import com.nttdocomo.ui.Canvas;
 import com.nttdocomo.ui.Font;

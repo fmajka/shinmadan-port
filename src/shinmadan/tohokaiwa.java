@@ -1,3 +1,4 @@
+package shinmadan;
 public class tohokaiwa {
    static int effectflag;
    static int effectNEXT;
