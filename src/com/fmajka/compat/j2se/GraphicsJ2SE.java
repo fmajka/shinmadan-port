@@ -3,18 +3,45 @@ package com.fmajka.compat.j2se;
 import java.awt.Color;
 import java.awt.Graphics2D;
 
+import com.fmajka.compat.j2se.gui.GamePanel;
 import com.nttdocomo.ui.Graphics;
 import com.nttdocomo.ui.Image;
 
 public class GraphicsJ2SE extends Graphics {
+    java.awt.Image backBuffer;
     Graphics2D g;
+    Graphics2D frontBufferG;
+    Graphics2D backBufferG;
+    int lockCount = 0;
 
-    public GraphicsJ2SE(Graphics2D g) {
-        this.g = g;
+    public GraphicsJ2SE(GamePanel panel) {
+        g = frontBufferG = (Graphics2D)panel.getGraphics();
+        backBuffer = panel.createImage(panel.getWidth(), panel.getHeight());
+        backBufferG = (Graphics2D)backBuffer.getGraphics();
     }
 
     public void drawImage(Image image, int x, int y) {
         g.drawImage((java.awt.Image)image.platformImage, x, y, null);
+    }
+
+    public void drawImage(Image image, int dx, int dy, int sx, int sy, int width, int height) {
+        g.drawImage((java.awt.Image)image.platformImage,
+            dx, dy, dx + width, dy + height,
+            sx, sy, sx + width, sy + height, 
+            null
+        );
+    }
+
+    public void drawLine(int x1, int y1, int x2, int y2) {
+        g.drawLine(x1, y1, x2, y2);
+    }
+
+    public void drawScaledImage(Image image, int dx, int dy, int width, int height, int sx, int sy, int swidth, int sheight) {
+        g.drawImage((java.awt.Image)image.platformImage,
+            dx, dy, dx + width, dy + height,
+            sx, sy, sx + swidth, sy + sheight, 
+            null
+        );
     }
 
     public void drawString(String text, int x, int y) {
@@ -26,6 +53,21 @@ public class GraphicsJ2SE extends Graphics {
     }
 
     public void setColor(int color) {
-        g.setColor(new Color(color));
+        g.setColor(new Color(color, true));
+    }
+
+    public void lock() {
+        if(lockCount == 0) {
+            g = backBufferG;
+        }
+        lockCount++;
+    }
+
+    public void unlock(boolean force) {
+        lockCount = (force || lockCount == 0) ? 0 : lockCount - 1;
+        if(lockCount == 0) {
+            frontBufferG.drawImage(backBuffer, 0, 0, null);
+            g = frontBufferG;
+        }
     }
 }

@@ -54,10 +54,7 @@ public class GamePanel extends JPanel {
 
     // This is the callback for all keys
     private void onKeyChanged(int keyCode, int state) {
-        // System.out.println("Key " + KeyEvent.getKeyText(keyCode) + " -> " + state);
-        // TODO: store state of each key, calculate bitmask
-        System.out.println("Key " + keyMap.get(keyCode) + " -> " + state);
-        Context.processEvent(keyMap.get(keyCode), state);
+        Context.changeKeypadState(keyMap.get(keyCode), state);
     }
 
     private class KeyAction extends AbstractAction {

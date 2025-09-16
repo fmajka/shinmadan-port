@@ -53,7 +53,6 @@ public abstract class Canvas extends Frame {
      * @return the keypad state
      */
     public int getKeypadState() {
-        // TODO: emulate keypresses?
-        return 0;
+        return Context.getKeypadState();
     }
 }

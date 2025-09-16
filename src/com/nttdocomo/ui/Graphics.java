@@ -4,11 +4,11 @@ package com.nttdocomo.ui;
 public class Graphics {
 
     static public int getColorOfRGB(int r, int g, int b) {
-        return (r << 24) | (g << 16) | (b << 8);
+        return (255 << 24) | (r << 16) | (g << 8) | b;
     }
 
     static public int getColorOfRGB(int r, int g, int b, int a) {
-        return (r << 24) | (g << 16) | (b << 8) | a;
+        return (a << 24) | (r << 16) | (g << 8) | b;
     }
 
     public void drawArc(int x, int y, int width, int height, int startAngle, int arcAngle) {

@@ -11,6 +11,7 @@ public class Context {
 	static Graphics g;
     static MediaImageFactory mediaImageFactory;
     static tohoSINMACanvas canvas;
+    static int keypadState = 0;
 
 	public static void init(Graphics g, MediaImageFactory mediaImageFactory) {
 		Context.g = g;
@@ -36,10 +37,19 @@ public class Context {
         return new MediaSoundJ2SE(location);
     }
 
-    public static void processEvent(int keyCode, int state) {
-        // canvas.processEvent(keyCode, state);
-        // var1 == 0 -> key change?, 
-        // var2 -> key bitsum?
-        canvas.processEvent(0, keyCode);
+    public static int getKeypadState() {
+        return keypadState;
+    }
+
+    public static void changeKeypadState(int keyCode, int state) {
+        if(state == 1) {
+            keypadState |= (1 << keyCode);
+        } 
+        else {
+            keypadState &= ~(1 << keyCode);
+        }
+        // KEY_PRESSED_EVENT = 0, Value of pressed key
+        // KEY_RELEASED_EVENT = 1, Value of released key
+        canvas.processEvent(1 - state, keyCode);
     }
 }

@@ -955,9 +955,10 @@ public class tohoSINMACanvas extends Canvas implements MediaListener {
       float var5 = var3 - var1;
       float var6 = var4 - var2;
       float var7 = FastMath.atan2(var5, var6);
-      if (var6 < 0.0F) {
-         var7 += 180.0F;
-      }
+      // DoJa-specific fix, no longer needed
+      // if (var6 < 0.0F) {
+      //    var7 += 180.0F;
+      // }
 
       return var7;
    }
