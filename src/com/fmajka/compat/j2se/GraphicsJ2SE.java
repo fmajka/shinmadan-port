@@ -1,5 +1,6 @@
 package com.fmajka.compat.j2se;
 
+import java.awt.AlphaComposite;
 import java.awt.Color;
 import java.awt.Graphics2D;
 
@@ -12,19 +13,32 @@ public class GraphicsJ2SE extends Graphics {
     Graphics2D g;
     Graphics2D frontBufferG;
     Graphics2D backBufferG;
+    GamePanel panel;
     int lockCount = 0;
 
     public GraphicsJ2SE(GamePanel panel) {
+        this.panel = panel;
         g = frontBufferG = (Graphics2D)panel.getGraphics();
         backBuffer = panel.createImage(panel.getWidth(), panel.getHeight());
         backBufferG = (Graphics2D)backBuffer.getGraphics();
+        panel.backBuffer = backBuffer;
+    }
+
+    private void setAlpha(Image image) {
+        this.g.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, image.getAlpha() / 255.0f));
+    }
+
+    public void drawArc(int x, int y, int width, int height, int startAngle, int arcAngle) {
+        g.drawArc(x, y, width, height, startAngle, arcAngle);
     }
 
     public void drawImage(Image image, int x, int y) {
+        setAlpha(image);
         g.drawImage((java.awt.Image)image.platformImage, x, y, null);
     }
 
     public void drawImage(Image image, int dx, int dy, int sx, int sy, int width, int height) {
+        setAlpha(image);
         g.drawImage((java.awt.Image)image.platformImage,
             dx, dy, dx + width, dy + height,
             sx, sy, sx + width, sy + height, 
@@ -36,7 +50,12 @@ public class GraphicsJ2SE extends Graphics {
         g.drawLine(x1, y1, x2, y2);
     }
 
+    public void drawPolyline(int[] xPoints, int[] yPoints, int nPoints) {
+        g.drawPolyline(xPoints, yPoints, nPoints);
+    }
+
     public void drawScaledImage(Image image, int dx, int dy, int width, int height, int sx, int sy, int swidth, int sheight) {
+        setAlpha(image);
         g.drawImage((java.awt.Image)image.platformImage,
             dx, dy, dx + width, dy + height,
             sx, sy, sx + swidth, sy + sheight, 
@@ -46,6 +65,14 @@ public class GraphicsJ2SE extends Graphics {
 
     public void drawString(String text, int x, int y) {
         g.drawString(text, x, y);
+    }
+
+    public void fillArc(int x, int y, int width, int height, int startAngle, int arcAngle) {
+        g.fillArc(x, y, width, height, startAngle, arcAngle);
+    }
+
+    public void fillPolygon(int[] xPoints, int[] yPoints, int nPoints) {
+        g.fillPolygon(xPoints, yPoints, nPoints);
     }
 
     public void fillRect(int x, int y, int width, int height) {
@@ -66,7 +93,7 @@ public class GraphicsJ2SE extends Graphics {
     public void unlock(boolean force) {
         lockCount = (force || lockCount == 0) ? 0 : lockCount - 1;
         if(lockCount == 0) {
-            frontBufferG.drawImage(backBuffer, 0, 0, null);
+            panel.repaint();
             g = frontBufferG;
         }
     }

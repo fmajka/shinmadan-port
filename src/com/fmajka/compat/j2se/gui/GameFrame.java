@@ -1,6 +1,8 @@
 package com.fmajka.compat.j2se.gui;
 
 import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.event.ComponentEvent;
 
 import javax.swing.JFrame;
 
@@ -9,12 +11,13 @@ public class GameFrame extends JFrame {
 
     public GameFrame() {
         panel = new GamePanel();
-        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        // Fixes weird white borders on the left and bottom of the frame
-        this.getContentPane().setLayout(new BorderLayout());
-        this.add(panel);
-        this.pack();
-        this.setLocationRelativeTo(null);
-        this.setVisible(true);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setTitle("Touhou Shinmadan port");
+        setLayout(new BorderLayout());
+        add(panel, BorderLayout.CENTER);
+        pack();
+        setMinimumSize(new Dimension(getWidth(), getHeight()));
+        setLocationRelativeTo(null);
+        setVisible(true);
     }
 }

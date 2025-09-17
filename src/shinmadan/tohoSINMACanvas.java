@@ -960,6 +960,7 @@ public class tohoSINMACanvas extends Canvas implements MediaListener {
       //    var7 += 180.0F;
       // }
 
+      System.out.println("getkakudo: " + String.format("%s", var7));
       return var7;
    }
 
@@ -3795,9 +3796,9 @@ public class tohoSINMACanvas extends Canvas implements MediaListener {
                                  float var178 = this.eY[this.cyc] - this.bomY[this.aa];
                                  float var182 = FastMath.atan2(var168, var178);
                                  this.bomkakudo[this.aa] = var182;
-                                 if (var178 < 0.0F) {
-                                    this.bomkakudo[this.aa] = this.bomkakudo[this.aa] + 180.0F;
-                                 }
+                                 // if (var178 < 0.0F) {
+                                 //    this.bomkakudo[this.aa] = this.bomkakudo[this.aa] + 180.0F;
+                                 // }
 
                                  this.bomXmove[this.aa] = (float)(this.bomspeed[this.aa] * Math.cos(this.bomkakudo[this.aa] * 3.1415 / 180.0));
                                  this.bomYmove[this.aa] = (float)(this.bomspeed[this.aa] * Math.sin(this.bomkakudo[this.aa] * 3.1415 / 180.0));
@@ -3812,9 +3813,9 @@ public class tohoSINMACanvas extends Canvas implements MediaListener {
                            float var179 = this.eY[this.bomseehit[this.aa]] - this.bomY[this.aa];
                            float var183 = FastMath.atan2(var169, var179);
                            this.bomkakudo[this.aa] = var183;
-                           if (var179 < 0.0F) {
-                              this.bomkakudo[this.aa] = this.bomkakudo[this.aa] + 180.0F;
-                           }
+                           // if (var179 < 0.0F) {
+                           //    this.bomkakudo[this.aa] = this.bomkakudo[this.aa] + 180.0F;
+                           // }
 
                            this.bomXmove[this.aa] = (float)(this.bomspeed[this.aa] * Math.cos(this.bomkakudo[this.aa] * 3.1415 / 180.0));
                            this.bomYmove[this.aa] = (float)(this.bomspeed[this.aa] * Math.sin(this.bomkakudo[this.aa] * 3.1415 / 180.0));
@@ -4334,9 +4335,9 @@ public class tohoSINMACanvas extends Canvas implements MediaListener {
                      float var170 = this.peopleX - this.itemX[this.aa];
                      float var180 = this.peopleY - this.itemY[this.aa];
                      float var184 = FastMath.atan2(var170, var180);
-                     if (var180 < 0.0F) {
-                        var184 += 180.0F;
-                     }
+                     // if (var180 < 0.0F) {
+                     //    var184 += 180.0F;
+                     // }
 
                      this.itemXmove[this.aa] = (float)(9.0 * Math.cos(var184 * 3.1415 / 180.0));
                      this.itemYmove[this.aa] = (float)(9.0 * Math.sin(var184 * 3.1415 / 180.0));
@@ -6106,9 +6107,9 @@ public class tohoSINMACanvas extends Canvas implements MediaListener {
             float var3 = this.tamaholdnumber1[var1] - this.tamaY[var1];
             float var4 = FastMath.atan2(var2, var3);
             this.tamakakudo[var1] = this.tamakakudo[var1] + var4;
-            if (var3 < 0.0F) {
-               this.tamakakudo[var1] = this.tamakakudo[var1] + 180.0F;
-            }
+            // if (var3 < 0.0F) {
+            //    this.tamakakudo[var1] = this.tamakakudo[var1] + 180.0F;
+            // }
 
             this.tamaXmove[var1] = this.tamaspeed[var1] * this.cos[(int)((this.tamakakudo[var1] * 10.0F + 3.6E7F) % 3600.0F)];
             this.tamaYmove[var1] = this.tamaspeed[var1] * this.sin[(int)((this.tamakakudo[var1] * 10.0F + 3.6E7F) % 3600.0F)];
@@ -6164,9 +6165,9 @@ public class tohoSINMACanvas extends Canvas implements MediaListener {
             }
 
             this.tamakakudo[var1] = this.tamakakudo[var1] + var7;
-            if (var6 < 0.0F) {
-               this.tamakakudo[var1] = this.tamakakudo[var1] + 180.0F;
-            }
+            // if (var6 < 0.0F) {
+            //    this.tamakakudo[var1] = this.tamakakudo[var1] + 180.0F;
+            // }
          }
 
          this.tamaholdnumber0[var1] = this.tamaholdnumber0[var1] + this.tamaholdnumber2[var1];
