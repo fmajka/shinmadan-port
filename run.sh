@@ -1,0 +1,1 @@
+java -jar sinma.jar
