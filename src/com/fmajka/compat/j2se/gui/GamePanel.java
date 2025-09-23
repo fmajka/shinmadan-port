@@ -81,7 +81,6 @@ public class GamePanel extends JPanel {
 
     // This is the callback for all keys
     private void onKeyChanged(int keyCode, int state) {
-        System.out.println(keyCode + " -> " + state);
         Context.changeKeypadState(keyMap.get(keyCode), state);
     }
 

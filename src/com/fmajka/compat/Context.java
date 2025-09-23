@@ -1,6 +1,7 @@
 package com.fmajka.compat;
 
-import com.fmajka.compat.j2se.MediaSoundJ2SE;
+import com.fmajka.compat.j2se.AudioPresenterJ2SE;
+import com.nttdocomo.ui.AudioPresenter;
 import com.nttdocomo.ui.Graphics;
 import com.nttdocomo.ui.MediaImage;
 import com.nttdocomo.ui.MediaSound;
@@ -10,12 +11,15 @@ import shinmadan.tohoSINMACanvas;
 public class Context {
 	static Graphics g;
     static MediaImageFactory mediaImageFactory;
+    static MediaSoundFactory mediaSoundFactory;
     static tohoSINMACanvas canvas;
+    static AudioPresenter audioPresenter;
     static int keypadState = 0;
 
-	public static void init(Graphics g, MediaImageFactory mediaImageFactory) {
+	public static void init(Graphics g, MediaImageFactory mediaImageFactory, MediaSoundFactory mediaSoundFactory) {
 		Context.g = g;
         Context.mediaImageFactory = mediaImageFactory;
+        Context.mediaSoundFactory = mediaSoundFactory;
 	}
 
     public static void setCanvas(tohoSINMACanvas canvas) {
@@ -32,9 +36,19 @@ public class Context {
         return mediaImageFactory.getImage(path);
     }
 
-    // TODO: properly implement
     public static MediaSound getSound(String location) {
-        return new MediaSoundJ2SE(location);
+        String[] parts = location.split("///");
+        String[] fileParts = parts[parts.length - 1].split("\\.");
+        fileParts[fileParts.length - 1] = "mid";
+        String path = "assets/" + String.join(".", fileParts);
+        return mediaSoundFactory.getSound(path);
+    }
+
+    public static AudioPresenter getAudioPresenter() {
+        if(audioPresenter == null) {
+            audioPresenter = new AudioPresenterJ2SE();
+        }
+        return audioPresenter;
     }
 
     public static int getKeypadState() {

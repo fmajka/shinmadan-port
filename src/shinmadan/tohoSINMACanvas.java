@@ -959,8 +959,6 @@ public class tohoSINMACanvas extends Canvas implements MediaListener {
       // if (var6 < 0.0F) {
       //    var7 += 180.0F;
       // }
-
-      System.out.println("getkakudo: " + String.format("%s", var7));
       return var7;
    }
 

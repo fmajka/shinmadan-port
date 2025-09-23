@@ -1,10 +1,12 @@
 package com.nttdocomo.ui;
 
+import com.fmajka.compat.Context;
+
 public class AudioPresenter implements MediaPresenter {
 
     public static AudioPresenter getAudioPresenter() {
         System.out.println("AudioPresenter.getAudioPresenter()");
-        return new AudioPresenter();
+        return Context.getAudioPresenter();
     }
 
     // listener = tohoSINMACanvas
