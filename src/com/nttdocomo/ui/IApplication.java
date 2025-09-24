@@ -1,5 +1,7 @@
 package com.nttdocomo.ui;
 
+import com.fmajka.compat.Context;
+
 public abstract class IApplication {
     public static int LAUNCH_BROWSER = 1;
 
@@ -20,6 +22,6 @@ public abstract class IApplication {
     }
 
     public void terminate() {
-        
+        Context.terminate();
     }
 }

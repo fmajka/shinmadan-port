@@ -66,4 +66,8 @@ public class Context {
         // KEY_RELEASED_EVENT = 1, Value of released key
         canvas.processEvent(1 - state, keyCode);
     }
+
+    public static void terminate() {
+        System.exit(0);
+    }
 }
