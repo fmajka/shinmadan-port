@@ -5,21 +5,18 @@ import com.fmajka.compat.Context;
 public class AudioPresenter implements MediaPresenter {
 
     public static AudioPresenter getAudioPresenter() {
-        System.out.println("AudioPresenter.getAudioPresenter()");
         return Context.getAudioPresenter();
     }
 
     // listener = tohoSINMACanvas
     @Override
     public void setMediaListener(MediaListener listener) {
-        System.out.println("audioPresenter.setMediaListener(" + listener + ")");
+
     }
 
     @Override
     public void setAttribute(int attrib, int value) {
-        System.out.println(
-            "audioPresenter.setAttribute(attrib=" + attrib + ", value=" + value + ")"
-        );
+        System.out.println("audioPresenter.setAttribute(" + attrib + ", " + value + ")");
     }
 
     @Override
