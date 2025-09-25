@@ -5,6 +5,8 @@ import java.awt.Color;
 import java.awt.Graphics2D;
 
 import com.fmajka.compat.j2se.gui.GamePanel;
+
+import com.nttdocomo.ui.Font;
 import com.nttdocomo.ui.Graphics;
 import com.nttdocomo.ui.Image;
 
@@ -81,6 +83,20 @@ public class GraphicsJ2SE extends Graphics {
 
     public void setColor(int color) {
         g.setColor(new Color(color, true));
+    }
+
+    public void setFont(Font font) {
+        int type = font.getType(), size;
+        switch (type) {
+            case Font.SIZE_TINY:
+                size = 10; break;
+            case Font.SIZE_SMALL:
+                size = 14; break;
+            default:
+                size = 12; break;
+        }
+        java.awt.Font f = new java.awt.Font("SansSerif", 0, size);
+        g.setFont(f);
     }
 
     public void lock() {
