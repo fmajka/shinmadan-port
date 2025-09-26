@@ -85,7 +85,7 @@ public class tohoSINMACanvas extends Canvas implements MediaListener {
    int peoplemove;
    int peoplenonshot;
    int peoplepoint;
-   static int peoplebomkind;
+   public static int peoplebomkind;
    int magic;
    int peopleslow;
    int peoplepower;
@@ -160,9 +160,9 @@ public class tohoSINMACanvas extends Canvas implements MediaListener {
    static int[] effectholdnumber1 = new int[effect_max];
    static int[] effectholdnumber2 = new int[effect_max];
    static String kaiwaname;
-   static String kaiwa1 = "";
-   static String kaiwa2 = "";
-   static String kaiwa3 = "";
+   public static String kaiwa1 = "";
+   public static String kaiwa2 = "";
+   public static String kaiwa3 = "";
    int bullet_max = 60;
    int[] bulletmode = new int[this.bullet_max];
    int[] bullettime = new int[this.bullet_max];
@@ -666,7 +666,7 @@ public class tohoSINMACanvas extends Canvas implements MediaListener {
       }
    }
 
-   static void effectIn(float var0, float var1, int var2, int var3, int var4, int var5) {
+   public static void effectIn(float var0, float var1, int var2, int var3, int var4, int var5) {
       int var6;
       for (var6 = 0; var6 < effect_see_max; var6++) {
          if (effectmode[var6] == 0) {
