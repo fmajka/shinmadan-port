@@ -1,10 +1,10 @@
-package com.fmajka.compat.j2se;
+package org.tohosinma.compat.j2se;
 
 import java.awt.AlphaComposite;
 import java.awt.Color;
 import java.awt.Graphics2D;
 
-import com.fmajka.compat.j2se.gui.GamePanel;
+import org.tohosinma.compat.j2se.gui.GamePanel;
 
 import com.nttdocomo.ui.Font;
 import com.nttdocomo.ui.Graphics;

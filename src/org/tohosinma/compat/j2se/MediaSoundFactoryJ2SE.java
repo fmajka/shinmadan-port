@@ -1,7 +1,8 @@
-package com.fmajka.compat.j2se;
+package org.tohosinma.compat.j2se;
+
+import org.tohosinma.compat.MediaSoundFactory;
 
 import com.nttdocomo.ui.MediaSound;
-import com.fmajka.compat.MediaSoundFactory;
 
 public class MediaSoundFactoryJ2SE implements MediaSoundFactory {
     public MediaSound getSound(String location) {

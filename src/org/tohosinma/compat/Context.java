@@ -1,12 +1,12 @@
-package com.fmajka.compat;
+package org.tohosinma.compat;
 
-import com.fmajka.compat.j2se.AudioPresenterJ2SE;
+import org.tohosinma.compat.j2se.AudioPresenterJ2SE;
+import org.tohosinma.decompiled.tohoSINMACanvas;
+
 import com.nttdocomo.ui.AudioPresenter;
 import com.nttdocomo.ui.Graphics;
 import com.nttdocomo.ui.MediaImage;
 import com.nttdocomo.ui.MediaSound;
-
-import shinmadan.tohoSINMACanvas;
 
 public class Context {
 	static Graphics g;

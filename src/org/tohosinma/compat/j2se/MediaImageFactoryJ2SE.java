@@ -1,7 +1,8 @@
-package com.fmajka.compat.j2se;
+package org.tohosinma.compat.j2se;
+
+import org.tohosinma.compat.MediaImageFactory;
 
 import com.nttdocomo.ui.MediaImage;
-import com.fmajka.compat.MediaImageFactory;
 
 public class MediaImageFactoryJ2SE implements MediaImageFactory {
     public MediaImage getImage(String location) {

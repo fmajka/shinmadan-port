@@ -1,4 +1,4 @@
-package com.fmajka.compat.j2se;
+package org.tohosinma.compat.j2se;
 
 import javax.sound.midi.MidiChannel;
 import javax.sound.midi.MidiSystem;

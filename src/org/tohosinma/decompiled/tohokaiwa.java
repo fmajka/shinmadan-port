@@ -1,4 +1,4 @@
-package shinmadan;
+package org.tohosinma.decompiled;
 public class tohokaiwa {
    static int effectflag;
    static int effectNEXT;

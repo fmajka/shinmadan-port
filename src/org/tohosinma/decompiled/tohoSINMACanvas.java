@@ -1,4 +1,9 @@
-package shinmadan;
+package org.tohosinma.decompiled;
+
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.util.Random;
+import javax.microedition.io.Connector;
 
 import com.nttdocomo.ui.AudioPresenter;
 import com.nttdocomo.ui.Canvas;
@@ -13,10 +18,6 @@ import com.nttdocomo.ui.MediaPresenter;
 import com.nttdocomo.ui.MediaSound;
 import com.nttdocomo.ui.PhoneSystem;
 import com.nttdocomo.ui.util3d.FastMath;
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.util.Random;
-import javax.microedition.io.Connector;
 
 public class tohoSINMACanvas extends Canvas implements MediaListener {
    static int saiflag;

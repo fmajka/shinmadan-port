@@ -1,6 +1,6 @@
 package com.nttdocomo.ui;
 
-import com.fmajka.compat.Context;
+import org.tohosinma.compat.Context;
 
 public class MediaManager {
 

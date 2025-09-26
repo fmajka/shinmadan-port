@@ -1,6 +1,6 @@
 package com.nttdocomo.ui;
 
-import com.fmajka.compat.Context;
+import org.tohosinma.compat.Context;
 
 public abstract class Canvas extends Frame {
     // processIMEEvent Used as the type argument to the method. 

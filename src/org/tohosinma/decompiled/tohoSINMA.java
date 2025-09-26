@@ -1,4 +1,4 @@
-package shinmadan;
+package org.tohosinma.decompiled;
 
 import com.nttdocomo.ui.Display;
 import com.nttdocomo.ui.IApplication;

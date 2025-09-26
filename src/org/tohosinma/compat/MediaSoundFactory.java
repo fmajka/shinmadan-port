@@ -1,4 +1,4 @@
-package com.fmajka.compat;
+package org.tohosinma.compat;
 
 import com.nttdocomo.ui.MediaSound;
 

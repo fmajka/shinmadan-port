@@ -1,4 +1,9 @@
-package shinmadan;
+package org.tohosinma.decompiled;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import javax.microedition.io.Connector;
 
 import com.nttdocomo.io.ConnectionException;
 import com.nttdocomo.system.ImageStore;
@@ -8,10 +13,6 @@ import com.nttdocomo.ui.Image;
 import com.nttdocomo.ui.ImageEncoder;
 import com.nttdocomo.ui.MediaImage;
 import com.nttdocomo.ui.MediaManager;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import javax.microedition.io.Connector;
 
 class ImageEncode {
 //    Image image = null;

@@ -1,7 +1,7 @@
 #!/bin/bash
 status=0
 
-if javac -Xmaxerrs 1 -d bin/pc $(find . -name "*.java"); then
+if javac -Xmaxerrs 1 -d bin/j2se $(find . -name "*.java"); then
     echo "Build successful"
 else
     echo "Build failed!"
@@ -9,7 +9,7 @@ else
 fi
 
 if [ $status -eq 0 ]; then
-    if jar cfe sinma.jar com.fmajka.compat.j2se.MainJ2SE -C bin/pc .; then
+    if jar cfe sinma.jar org.tohosinma.compat.j2se.MainJ2SE -C bin/j2se .; then
         echo "Jar successful!"
     else
         echo "Jar failed!"

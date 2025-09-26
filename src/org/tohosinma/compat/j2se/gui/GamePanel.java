@@ -1,4 +1,4 @@
-package com.fmajka.compat.j2se.gui;
+package org.tohosinma.compat.j2se.gui;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -16,7 +16,7 @@ import javax.swing.JComponent;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 
-import com.fmajka.compat.Context;
+import org.tohosinma.compat.Context;
 
 public class GamePanel extends JPanel {
     public Image backBuffer;

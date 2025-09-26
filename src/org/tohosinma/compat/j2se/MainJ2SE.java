@@ -1,9 +1,8 @@
-package com.fmajka.compat.j2se;
+package org.tohosinma.compat.j2se;
 
-import com.fmajka.compat.Context;
-import com.fmajka.compat.j2se.gui.GameFrame;
-
-import shinmadan.tohoSINMA;
+import org.tohosinma.compat.Context;
+import org.tohosinma.compat.j2se.gui.GameFrame;
+import org.tohosinma.decompiled.tohoSINMA;
 
 public class MainJ2SE {
     public static void main(String[] args) {

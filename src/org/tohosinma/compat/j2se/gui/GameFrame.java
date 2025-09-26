@@ -1,4 +1,4 @@
-package com.fmajka.compat.j2se.gui;
+package org.tohosinma.compat.j2se.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
