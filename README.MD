@@ -2,7 +2,11 @@
 
 This is a fanmade port of a fanmade Touhou Project game, Touhou Shinmadan. It consists of decompiled code of the game, stub implementations of the necessary DoJa specification, and a minimum compatibility layer for the game to function, alongside some small quality of life additions.
 
+## How it all started
+
 The chain of events that eventually led to me creating this project started with me accidentaly finding some old dumbphones, which my parents used to use back in the day. One of them still worked, and I liked its style, so I dreamed that it would be cool to make a simple Touhou-like game for it. But first I decided to see if a game like that already exists. That's how I stumbled upon Touhou Shinmadan, but unfortunately I wasn't able to install it on the phone. This eventually led me into the DoJa rabbit hole. Knowing that Java source code is easy to decompile, I thought that an even cooler idea than making my own J2ME game would be porting Shinmadan to the Java Micro Edition standard. And so this is how this project began...
+
+## Goals
 
 In order to make things easier for myself, as this is the first time I'm doing this kind of project, my initial goal is to port the game to PCs. One of the rules I set is to separate the Doja stubs and the platform-specific implementation as neatly as possible, so that adding support for different platforms is easy and doesn't require to modify the existing code.
 
