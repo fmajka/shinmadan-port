@@ -250,516 +250,516 @@ public class tohoSINMACanvas extends Canvas implements MediaListener {
       }
    }
 
-   void sh(float var1, float var2, int var3, float var4, float var5, int var6, int var7, int var8, int var9, int var10) {
-      int var11;
-      for (var11 = 0; var11 < this.tama_see_max; var11++) {
-         if (this.tamamode[var11] == 0) {
-            this.tamatime[var11] = 0;
-            this.tamamode[var11] = var3;
-            this.tamaX[var11] = var1;
-            this.tamaY[var11] = var2;
-            this.tamaXmove[var11] = 0.0F;
-            this.tamaYmove[var11] = 0.0F;
-            this.tamaspeed[var11] = var4;
-            this.tamakakudo[var11] = var5;
-            this.tamashape[var11] = var9;
-            this.tamaholdnumber0[var11] = var6;
-            this.tamaholdnumber1[var11] = var7;
-            this.tamaholdnumber2[var11] = var8;
-            this.tamakasuri[var11] = 0;
-            this.tamairo[var11] = var10;
-            this.tamaatari[var11] = 5;
-            this.tamakesuna[var11] = 0;
-            if (this.tamashape[var11] == 0) {
-               this.tamaatari[var11] = 2;
+   void sh(float x, float y, int mode, float speed, float kakudo, int holdnumber1, int holdnumber2, int holdnumber3, int shape, int iro) {
+      int i;
+      for (i = 0; i < this.tama_see_max; i++) {
+         if (this.tamamode[i] == 0) {
+            this.tamatime[i] = 0;
+            this.tamamode[i] = mode;
+            this.tamaX[i] = x;
+            this.tamaY[i] = y;
+            this.tamaXmove[i] = 0.0F;
+            this.tamaYmove[i] = 0.0F;
+            this.tamaspeed[i] = speed;
+            this.tamakakudo[i] = kakudo;
+            this.tamashape[i] = shape;
+            this.tamaholdnumber0[i] = holdnumber1;
+            this.tamaholdnumber1[i] = holdnumber2;
+            this.tamaholdnumber2[i] = holdnumber3;
+            this.tamakasuri[i] = 0;
+            this.tamairo[i] = iro;
+            this.tamaatari[i] = 5;
+            this.tamakesuna[i] = 0;
+            if (this.tamashape[i] == 0) {
+               this.tamaatari[i] = 2;
             }
 
-            if (this.tamashape[var11] == 1) {
-               this.tamaatari[var11] = 2;
+            if (this.tamashape[i] == 1) {
+               this.tamaatari[i] = 2;
             }
 
-            if (this.tamashape[var11] == 2) {
-               this.tamaatari[var11] = 3;
+            if (this.tamashape[i] == 2) {
+               this.tamaatari[i] = 3;
             }
 
-            if (this.tamashape[var11] == 3) {
-               this.tamaatari[var11] = 3;
+            if (this.tamashape[i] == 3) {
+               this.tamaatari[i] = 3;
             }
 
-            if (this.tamashape[var11] == 4) {
-               this.tamaatari[var11] = 5;
+            if (this.tamashape[i] == 4) {
+               this.tamaatari[i] = 5;
             }
 
-            if (this.tamashape[var11] == 5) {
-               this.tamaatari[var11] = 7;
+            if (this.tamashape[i] == 5) {
+               this.tamaatari[i] = 7;
             }
 
-            if (this.tamashape[var11] == 6) {
-               this.tamaatari[var11] = 11;
+            if (this.tamashape[i] == 6) {
+               this.tamaatari[i] = 11;
             }
 
-            if (this.tamashape[var11] == 7) {
-               this.tamaatari[var11] = 11;
+            if (this.tamashape[i] == 7) {
+               this.tamaatari[i] = 11;
             }
 
-            if (this.tamashape[var11] == 8) {
-               this.tamaatari[var11] = 3;
+            if (this.tamashape[i] == 8) {
+               this.tamaatari[i] = 3;
             }
 
-            if (this.tamashape[var11] == 13) {
-               this.tamaatari[var11] = 5;
+            if (this.tamashape[i] == 13) {
+               this.tamaatari[i] = 5;
             }
 
-            if (this.tamashape[var11] == 9) {
-               this.tamaatari[var11] = 1;
-               this.tamakesuna[var11] = 1;
+            if (this.tamashape[i] == 9) {
+               this.tamaatari[i] = 1;
+               this.tamakesuna[i] = 1;
             }
 
-            if (this.tamashape[var11] == 10) {
-               this.tamaatari[var11] = 1;
-               this.tamakesuna[var11] = 1;
+            if (this.tamashape[i] == 10) {
+               this.tamaatari[i] = 1;
+               this.tamakesuna[i] = 1;
             }
 
-            if (this.tamashape[var11] == 12) {
-               this.tamaatari[var11] = 15;
+            if (this.tamashape[i] == 12) {
+               this.tamaatari[i] = 15;
             }
 
-            var11 = -999;
+            i = -999;
             break;
          }
       }
 
-      if (var11 != -999) {
-         for (int var12 = this.tama_see_max; var12 < this.tama_max; var12++) {
-            if (this.tamamode[var12] == 0) {
-               this.tamatime[var12] = 0;
-               this.tamamode[var12] = var3;
-               this.tamaX[var12] = var1;
-               this.tamaY[var12] = var2;
-               this.tamaXmove[var12] = 0.0F;
-               this.tamaYmove[var12] = 0.0F;
-               this.tamaspeed[var12] = var4;
-               this.tamakakudo[var12] = var5;
-               this.tamashape[var12] = var9;
-               this.tamaholdnumber0[var12] = var6;
-               this.tamaholdnumber1[var12] = var7;
-               this.tamaholdnumber2[var12] = var8;
-               this.tamakasuri[var12] = 0;
-               this.tamairo[var12] = var10;
-               this.tamaatari[var12] = 5;
-               this.tamakesuna[var12] = 0;
-               if (this.tamashape[var12] == 0) {
-                  this.tamaatari[var12] = 2;
+      if (i != -999) {
+         for (int j = this.tama_see_max; j < this.tama_max; j++) {
+            if (this.tamamode[j] == 0) {
+               this.tamatime[j] = 0;
+               this.tamamode[j] = mode;
+               this.tamaX[j] = x;
+               this.tamaY[j] = y;
+               this.tamaXmove[j] = 0.0F;
+               this.tamaYmove[j] = 0.0F;
+               this.tamaspeed[j] = speed;
+               this.tamakakudo[j] = kakudo;
+               this.tamashape[j] = shape;
+               this.tamaholdnumber0[j] = holdnumber1;
+               this.tamaholdnumber1[j] = holdnumber2;
+               this.tamaholdnumber2[j] = holdnumber3;
+               this.tamakasuri[j] = 0;
+               this.tamairo[j] = iro;
+               this.tamaatari[j] = 5;
+               this.tamakesuna[j] = 0;
+               if (this.tamashape[j] == 0) {
+                  this.tamaatari[j] = 2;
                }
 
-               if (this.tamashape[var12] == 1) {
-                  this.tamaatari[var12] = 2;
+               if (this.tamashape[j] == 1) {
+                  this.tamaatari[j] = 2;
                }
 
-               if (this.tamashape[var12] == 2) {
-                  this.tamaatari[var12] = 3;
+               if (this.tamashape[j] == 2) {
+                  this.tamaatari[j] = 3;
                }
 
-               if (this.tamashape[var12] == 3) {
-                  this.tamaatari[var12] = 3;
+               if (this.tamashape[j] == 3) {
+                  this.tamaatari[j] = 3;
                }
 
-               if (this.tamashape[var12] == 4) {
-                  this.tamaatari[var12] = 5;
+               if (this.tamashape[j] == 4) {
+                  this.tamaatari[j] = 5;
                }
 
-               if (this.tamashape[var12] == 5) {
-                  this.tamaatari[var12] = 7;
+               if (this.tamashape[j] == 5) {
+                  this.tamaatari[j] = 7;
                }
 
-               if (this.tamashape[var12] == 6) {
-                  this.tamaatari[var12] = 11;
+               if (this.tamashape[j] == 6) {
+                  this.tamaatari[j] = 11;
                }
 
-               if (this.tamashape[var12] == 7) {
-                  this.tamaatari[var12] = 11;
+               if (this.tamashape[j] == 7) {
+                  this.tamaatari[j] = 11;
                }
 
-               if (this.tamashape[var12] == 8) {
-                  this.tamaatari[var12] = 3;
+               if (this.tamashape[j] == 8) {
+                  this.tamaatari[j] = 3;
                }
 
-               if (this.tamashape[var12] == 13) {
-                  this.tamaatari[var12] = 5;
+               if (this.tamashape[j] == 13) {
+                  this.tamaatari[j] = 5;
                }
 
-               if (this.tamashape[var12] == 9) {
-                  this.tamaatari[var12] = 1;
-                  this.tamakesuna[var12] = 1;
+               if (this.tamashape[j] == 9) {
+                  this.tamaatari[j] = 1;
+                  this.tamakesuna[j] = 1;
                }
 
-               if (this.tamashape[var12] == 10) {
-                  this.tamaatari[var12] = 1;
-                  this.tamakesuna[var12] = 1;
+               if (this.tamashape[j] == 10) {
+                  this.tamaatari[j] = 1;
+                  this.tamakesuna[j] = 1;
                }
 
-               if (this.tamashape[var12] == 12) {
-                  this.tamaatari[var12] = 15;
+               if (this.tamashape[j] == 12) {
+                  this.tamaatari[j] = 15;
                }
 
-               this.tama_see_max = var12 + 1;
+               this.tama_see_max = j + 1;
                break;
             }
          }
       }
    }
 
-   void sh(float var1, float var2, float var3, int var4, float var5, float var6, int var7, int var8, int var9, int var10, int var11) {
-      int var12;
-      for (var12 = 0; var12 < this.tama_see_max; var12++) {
-         if (this.tamamode[var12] == 0) {
-            this.tamatime[var12] = 0;
-            this.tamamode[var12] = var4;
-            this.tamaX[var12] = var2 + var1 * this.cos[(int)((var6 * 10.0F + 3.6E7F) % 3600.0F)];
-            this.tamaY[var12] = var3 + var1 * this.sin[(int)((var6 * 10.0F + 3.6E7F) % 3600.0F)];
-            this.tamaXmove[var12] = 0.0F;
-            this.tamaYmove[var12] = 0.0F;
-            this.tamaspeed[var12] = var5;
-            this.tamakakudo[var12] = var6;
-            this.tamashape[var12] = var10;
-            this.tamaholdnumber0[var12] = var7;
-            this.tamaholdnumber1[var12] = var8;
-            this.tamaholdnumber2[var12] = var9;
-            this.tamakasuri[var12] = 0;
-            this.tamairo[var12] = var11;
-            this.tamaatari[var12] = 5;
-            this.tamakesuna[var12] = 0;
-            if (this.tamashape[var12] == 0) {
-               this.tamaatari[var12] = 2;
+   void sh(float offset, float x, float y, int mode, float speed, float kakudo, int holdnumber0, int holdnumber1, int holdnumber2, int shape, int iro) {
+      int i;
+      for (i = 0; i < this.tama_see_max; i++) {
+         if (this.tamamode[i] == 0) {
+            this.tamatime[i] = 0;
+            this.tamamode[i] = mode;
+            this.tamaX[i] = x + offset * this.cos[(int)((kakudo * 10.0F + 3.6E7F) % 3600.0F)];
+            this.tamaY[i] = y + offset * this.sin[(int)((kakudo * 10.0F + 3.6E7F) % 3600.0F)];
+            this.tamaXmove[i] = 0.0F;
+            this.tamaYmove[i] = 0.0F;
+            this.tamaspeed[i] = speed;
+            this.tamakakudo[i] = kakudo;
+            this.tamashape[i] = shape;
+            this.tamaholdnumber0[i] = holdnumber0;
+            this.tamaholdnumber1[i] = holdnumber1;
+            this.tamaholdnumber2[i] = holdnumber2;
+            this.tamakasuri[i] = 0;
+            this.tamairo[i] = iro;
+            this.tamaatari[i] = 5;
+            this.tamakesuna[i] = 0;
+            if (this.tamashape[i] == 0) {
+               this.tamaatari[i] = 2;
             }
 
-            if (this.tamashape[var12] == 1) {
-               this.tamaatari[var12] = 2;
+            if (this.tamashape[i] == 1) {
+               this.tamaatari[i] = 2;
             }
 
-            if (this.tamashape[var12] == 2) {
-               this.tamaatari[var12] = 3;
+            if (this.tamashape[i] == 2) {
+               this.tamaatari[i] = 3;
             }
 
-            if (this.tamashape[var12] == 3) {
-               this.tamaatari[var12] = 3;
+            if (this.tamashape[i] == 3) {
+               this.tamaatari[i] = 3;
             }
 
-            if (this.tamashape[var12] == 4) {
-               this.tamaatari[var12] = 5;
+            if (this.tamashape[i] == 4) {
+               this.tamaatari[i] = 5;
             }
 
-            if (this.tamashape[var12] == 5) {
-               this.tamaatari[var12] = 7;
+            if (this.tamashape[i] == 5) {
+               this.tamaatari[i] = 7;
             }
 
-            if (this.tamashape[var12] == 6) {
-               this.tamaatari[var12] = 11;
+            if (this.tamashape[i] == 6) {
+               this.tamaatari[i] = 11;
             }
 
-            if (this.tamashape[var12] == 7) {
-               this.tamaatari[var12] = 11;
+            if (this.tamashape[i] == 7) {
+               this.tamaatari[i] = 11;
             }
 
-            if (this.tamashape[var12] == 8) {
-               this.tamaatari[var12] = 3;
+            if (this.tamashape[i] == 8) {
+               this.tamaatari[i] = 3;
             }
 
-            if (this.tamashape[var12] == 9) {
-               this.tamaatari[var12] = 1;
-               this.tamakesuna[var12] = 1;
+            if (this.tamashape[i] == 9) {
+               this.tamaatari[i] = 1;
+               this.tamakesuna[i] = 1;
             }
 
-            if (this.tamashape[var12] == 10) {
-               this.tamaatari[var12] = 1;
-               this.tamakesuna[var12] = 1;
+            if (this.tamashape[i] == 10) {
+               this.tamaatari[i] = 1;
+               this.tamakesuna[i] = 1;
             }
 
-            if (this.tamashape[var12] == 12) {
-               this.tamaatari[var12] = 15;
+            if (this.tamashape[i] == 12) {
+               this.tamaatari[i] = 15;
             }
 
-            var12 = -999;
+            i = -999;
             break;
          }
       }
 
-      if (var12 != -999) {
-         for (int var13 = this.tama_see_max; var13 < this.tama_max; var13++) {
-            if (this.tamamode[var13] == 0) {
-               this.tamatime[var13] = 0;
-               this.tamamode[var13] = var4;
-               this.tamaX[var13] = var2 + var1 * this.cos[(int)((var6 * 10.0F + 3.6E7F) % 3600.0F)];
-               this.tamaY[var13] = var3 + var1 * this.sin[(int)((var6 * 10.0F + 3.6E7F) % 3600.0F)];
-               this.tamaXmove[var13] = 0.0F;
-               this.tamaYmove[var13] = 0.0F;
-               this.tamaspeed[var13] = var5;
-               this.tamakakudo[var13] = var6;
-               this.tamashape[var13] = var10;
-               this.tamaholdnumber0[var13] = var7;
-               this.tamaholdnumber1[var13] = var8;
-               this.tamaholdnumber2[var13] = var9;
-               this.tamakasuri[var13] = 0;
-               this.tamairo[var13] = var11;
-               this.tamaatari[var13] = 5;
-               this.tamakesuna[var13] = 0;
-               if (this.tamashape[var13] == 0) {
-                  this.tamaatari[var13] = 2;
+      if (i != -999) {
+         for (int j = this.tama_see_max; j < this.tama_max; j++) {
+            if (this.tamamode[j] == 0) {
+               this.tamatime[j] = 0;
+               this.tamamode[j] = mode;
+               this.tamaX[j] = x + offset * this.cos[(int)((kakudo * 10.0F + 3.6E7F) % 3600.0F)];
+               this.tamaY[j] = y + offset * this.sin[(int)((kakudo * 10.0F + 3.6E7F) % 3600.0F)];
+               this.tamaXmove[j] = 0.0F;
+               this.tamaYmove[j] = 0.0F;
+               this.tamaspeed[j] = speed;
+               this.tamakakudo[j] = kakudo;
+               this.tamashape[j] = shape;
+               this.tamaholdnumber0[j] = holdnumber0;
+               this.tamaholdnumber1[j] = holdnumber1;
+               this.tamaholdnumber2[j] = holdnumber2;
+               this.tamakasuri[j] = 0;
+               this.tamairo[j] = iro;
+               this.tamaatari[j] = 5;
+               this.tamakesuna[j] = 0;
+               if (this.tamashape[j] == 0) {
+                  this.tamaatari[j] = 2;
                }
 
-               if (this.tamashape[var13] == 1) {
-                  this.tamaatari[var13] = 2;
+               if (this.tamashape[j] == 1) {
+                  this.tamaatari[j] = 2;
                }
 
-               if (this.tamashape[var13] == 2) {
-                  this.tamaatari[var13] = 3;
+               if (this.tamashape[j] == 2) {
+                  this.tamaatari[j] = 3;
                }
 
-               if (this.tamashape[var13] == 3) {
-                  this.tamaatari[var13] = 3;
+               if (this.tamashape[j] == 3) {
+                  this.tamaatari[j] = 3;
                }
 
-               if (this.tamashape[var13] == 4) {
-                  this.tamaatari[var13] = 5;
+               if (this.tamashape[j] == 4) {
+                  this.tamaatari[j] = 5;
                }
 
-               if (this.tamashape[var13] == 5) {
-                  this.tamaatari[var13] = 7;
+               if (this.tamashape[j] == 5) {
+                  this.tamaatari[j] = 7;
                }
 
-               if (this.tamashape[var13] == 6) {
-                  this.tamaatari[var13] = 11;
+               if (this.tamashape[j] == 6) {
+                  this.tamaatari[j] = 11;
                }
 
-               if (this.tamashape[var13] == 7) {
-                  this.tamaatari[var13] = 11;
+               if (this.tamashape[j] == 7) {
+                  this.tamaatari[j] = 11;
                }
 
-               if (this.tamashape[var13] == 8) {
-                  this.tamaatari[var13] = 3;
+               if (this.tamashape[j] == 8) {
+                  this.tamaatari[j] = 3;
                }
 
-               if (this.tamashape[var13] == 9) {
-                  this.tamaatari[var13] = 1;
-                  this.tamakesuna[var13] = 1;
+               if (this.tamashape[j] == 9) {
+                  this.tamaatari[j] = 1;
+                  this.tamakesuna[j] = 1;
                }
 
-               if (this.tamashape[var13] == 10) {
-                  this.tamaatari[var13] = 1;
-                  this.tamakesuna[var13] = 1;
+               if (this.tamashape[j] == 10) {
+                  this.tamaatari[j] = 1;
+                  this.tamakesuna[j] = 1;
                }
 
-               if (this.tamashape[var13] == 12) {
-                  this.tamaatari[var13] = 15;
+               if (this.tamashape[j] == 12) {
+                  this.tamaatari[j] = 15;
                }
 
-               this.tama_see_max = var13 + 1;
+               this.tama_see_max = j + 1;
                break;
             }
          }
       }
    }
 
-   void bomIn(float var1, float var2, int var3, float var4, int var5, int var6, int var7, int var8) {
-      for (int var9 = 0; var9 < this.bom_max; var9++) {
-         if (this.bommode[var9] == 0) {
-            this.bomtime[var9] = 0;
-            this.bommode[var9] = var3;
-            this.bomX[var9] = var1;
-            this.bomY[var9] = var2;
-            this.bomXmove[var9] = 0.0F;
-            this.bomYmove[var9] = 0.0F;
-            this.bomseehit[var9] = 0;
-            this.bomkakudo[var9] = var4;
-            this.bomholdnumber0[var9] = var5;
-            this.bomholdnumber1[var9] = var6;
-            this.bomholdnumber2[var9] = var7;
-            this.bomiro[var9] = var8;
-            this.bomhaba[var9] = 1.0F;
+   void bomIn(float x, float y, int mode, float kakudo, int holdnumber0, int holdnumber1, int holdnumber2, int iro) {
+      for (int i = 0; i < this.bom_max; i++) {
+         if (this.bommode[i] == 0) {
+            this.bomtime[i] = 0;
+            this.bommode[i] = mode;
+            this.bomX[i] = x;
+            this.bomY[i] = y;
+            this.bomXmove[i] = 0.0F;
+            this.bomYmove[i] = 0.0F;
+            this.bomseehit[i] = 0;
+            this.bomkakudo[i] = kakudo;
+            this.bomholdnumber0[i] = holdnumber0;
+            this.bomholdnumber1[i] = holdnumber1;
+            this.bomholdnumber2[i] = holdnumber2;
+            this.bomiro[i] = iro;
+            this.bomhaba[i] = 1.0F;
             break;
          }
       }
    }
 
-   void bulletIn(int var1, int var2, int var3, int var4) {
-      for (int var5 = 0; var5 < this.bullet_max; var5++) {
-         if (this.bulletmode[var5] == 0) {
-            this.bullettime[var5] = 0;
-            this.bulletmode[var5] = var3;
-            this.bulletX[var5] = var1;
-            this.bulletY[var5] = var2;
-            this.bulletseehit[var5] = 0;
-            this.bulletkille[var5] = 0;
-            this.bulletkakudo[var5] = var4;
-            if (var3 == 1) {
-               this.bulletXmove[var5] = 0.0F;
-               this.bulletYmove[var5] = -10.0F;
+   void bulletIn(int x, int y, int mode, int kakudo) {
+      for (int i = 0; i < this.bullet_max; i++) {
+         if (this.bulletmode[i] == 0) {
+            this.bullettime[i] = 0;
+            this.bulletmode[i] = mode;
+            this.bulletX[i] = x;
+            this.bulletY[i] = y;
+            this.bulletseehit[i] = 0;
+            this.bulletkille[i] = 0;
+            this.bulletkakudo[i] = kakudo;
+            if (mode == 1) {
+               this.bulletXmove[i] = 0.0F;
+               this.bulletYmove[i] = -10.0F;
             }
 
-            if (var3 == 2) {
-               this.bulletXmove[var5] = 0.0F;
-               this.bulletYmove[var5] = -15.0F;
+            if (mode == 2) {
+               this.bulletXmove[i] = 0.0F;
+               this.bulletYmove[i] = -15.0F;
             }
 
-            if (var3 == 3) {
-               this.bulletXmove[var5] = 0.0F;
-               this.bulletYmove[var5] = -15.0F;
+            if (mode == 3) {
+               this.bulletXmove[i] = 0.0F;
+               this.bulletYmove[i] = -15.0F;
             }
 
-            if (var3 == 4) {
-               this.bulletXmove[var5] = 0.0F;
-               this.bulletYmove[var5] = -12.0F;
+            if (mode == 4) {
+               this.bulletXmove[i] = 0.0F;
+               this.bulletYmove[i] = -12.0F;
             }
             break;
          }
       }
    }
 
-   void eIn(int var1, int var2, int var3, int var4, int var5) {
-      int var6;
-      for (var6 = 0; var6 < this.e_max; var6++) {
-         if (this.emode[var6] == 0) {
-            this.etime[var6] = 0;
-            this.emode[var6] = var3;
-            this.eX[var6] = var1;
-            this.eY[var6] = var2;
-            this.eXmove[var6] = 0.0F;
-            this.eYmove[var6] = 0.0F;
-            this.emuki[var6] = var4;
-            this.eitem[var6] = var5;
-            this.eholdnumber[var6] = 0;
-            this.eholdnumber2[var6] = 0;
-            this.eholdnumber3[var6] = 0;
-            this.eboss[var6] = 0;
-            this.edoing[var6] = 0;
-            this.emuteki[var6] = 0;
-            this.esuruu[var6] = 0;
-            this.eshape[var6] = 0;
-            var6 = -999;
+   void eIn(int x, int y, int mode, int muki, int item) {
+      int i;
+      for (i = 0; i < this.e_max; i++) {
+         if (this.emode[i] == 0) {
+            this.etime[i] = 0;
+            this.emode[i] = mode;
+            this.eX[i] = x;
+            this.eY[i] = y;
+            this.eXmove[i] = 0.0F;
+            this.eYmove[i] = 0.0F;
+            this.emuki[i] = muki;
+            this.eitem[i] = item;
+            this.eholdnumber[i] = 0;
+            this.eholdnumber2[i] = 0;
+            this.eholdnumber3[i] = 0;
+            this.eboss[i] = 0;
+            this.edoing[i] = 0;
+            this.emuteki[i] = 0;
+            this.esuruu[i] = 0;
+            this.eshape[i] = 0;
+            i = -999;
             break;
          }
       }
 
-      if (var6 != -999) {
-         for (int var7 = this.e_see_max; var7 < this.e_max; var7++) {
-            if (this.emode[var7] == 0) {
-               this.etime[var7] = 0;
-               this.emode[var7] = var3;
-               this.eX[var7] = var1;
-               this.eY[var7] = var2;
-               this.eXmove[var7] = 0.0F;
-               this.eYmove[var7] = 0.0F;
-               this.emuki[var7] = var4;
-               this.eitem[var7] = var5;
-               this.eholdnumber[var7] = 0;
-               this.eholdnumber2[var7] = 0;
-               this.eholdnumber3[var7] = 0;
-               this.eboss[var7] = 0;
-               this.edoing[var7] = 0;
-               this.emuteki[var7] = 0;
-               this.esuruu[var7] = 0;
-               this.eshape[var7] = 0;
-               this.e_see_max = var7 + 1;
+      if (i != -999) {
+         for (int j = this.e_see_max; j < this.e_max; j++) {
+            if (this.emode[j] == 0) {
+               this.etime[j] = 0;
+               this.emode[j] = mode;
+               this.eX[j] = x;
+               this.eY[j] = y;
+               this.eXmove[j] = 0.0F;
+               this.eYmove[j] = 0.0F;
+               this.emuki[j] = muki;
+               this.eitem[j] = item;
+               this.eholdnumber[j] = 0;
+               this.eholdnumber2[j] = 0;
+               this.eholdnumber3[j] = 0;
+               this.eboss[j] = 0;
+               this.edoing[j] = 0;
+               this.emuteki[j] = 0;
+               this.esuruu[j] = 0;
+               this.eshape[j] = 0;
+               this.e_see_max = j + 1;
                break;
             }
          }
       }
    }
 
-   public static void effectIn(float var0, float var1, int var2, int var3, int var4, int var5) {
-      int var6;
-      for (var6 = 0; var6 < effect_see_max; var6++) {
-         if (effectmode[var6] == 0) {
-            effecttime[var6] = 0;
-            effectmode[var6] = var2;
-            effectX[var6] = var0;
-            effectY[var6] = var1;
-            effectXmove[var6] = 0.0F;
-            effectYmove[var6] = 0.0F;
-            effectholdnumber0[var6] = var3;
-            effectholdnumber1[var6] = var4;
-            effectholdnumber2[var6] = var5;
-            var6 = -999;
+   public static void effectIn(float x, float y, int mode, int holdnumber0, int holdnumber1, int holdnumber2) {
+      int i;
+      for (i = 0; i < effect_see_max; i++) {
+         if (effectmode[i] == 0) {
+            effecttime[i] = 0;
+            effectmode[i] = mode;
+            effectX[i] = x;
+            effectY[i] = y;
+            effectXmove[i] = 0.0F;
+            effectYmove[i] = 0.0F;
+            effectholdnumber0[i] = holdnumber0;
+            effectholdnumber1[i] = holdnumber1;
+            effectholdnumber2[i] = holdnumber2;
+            i = -999;
             break;
          }
       }
 
-      if (var6 != -999) {
-         for (int var7 = effect_see_max; var7 < effect_max; var7++) {
-            if (effectmode[var7] == 0) {
-               effecttime[var7] = 0;
-               effectmode[var7] = var2;
-               effectX[var7] = var0;
-               effectY[var7] = var1;
-               effectXmove[var7] = 0.0F;
-               effectYmove[var7] = 0.0F;
-               effectholdnumber0[var7] = var3;
-               effectholdnumber1[var7] = var4;
-               effectholdnumber2[var7] = var5;
-               effect_see_max = var7 + 1;
+      if (i != -999) {
+         for (int j = effect_see_max; j < effect_max; j++) {
+            if (effectmode[j] == 0) {
+               effecttime[j] = 0;
+               effectmode[j] = mode;
+               effectX[j] = x;
+               effectY[j] = y;
+               effectXmove[j] = 0.0F;
+               effectYmove[j] = 0.0F;
+               effectholdnumber0[j] = holdnumber0;
+               effectholdnumber1[j] = holdnumber1;
+               effectholdnumber2[j] = holdnumber2;
+               effect_see_max = j + 1;
                break;
             }
          }
       }
    }
 
-   void laserIn(float var1, float var2, int var3, float var4, float var5, float var6, int var7, int var8, int var9, int var10) {
-      for (int var11 = 0; var11 < this.laser_max; var11++) {
-         if (this.lasermode[var11] == 0) {
-            this.lasernagasa[var11] = 0.0F;
-            this.lasertime[var11] = 0;
-            this.lasermode[var11] = var3;
-            this.laserX[var11] = var1;
-            this.laserY[var11] = var2;
-            this.laserXmove[var11] = 0.0F;
-            this.laserYmove[var11] = 0.0F;
-            this.laserspeed[var11] = var4;
-            this.laserkakudo[var11] = var5;
-            this.laserhaba_k[var11] = var6;
-            this.laserendtime[var11] = var7;
-            this.laserholdnumber0[var11] = var8;
-            this.laserholdnumber1[var11] = var9;
-            this.laserholdnumber2[var11] = var10;
+   void laserIn(float x, float y, int mode, float speed, float kakudo, float haba_k, int endtime, int holdnumber0, int holdnumber1, int holdnumber2) {
+      for (int i = 0; i < this.laser_max; i++) {
+         if (this.lasermode[i] == 0) {
+            this.lasernagasa[i] = 0.0F;
+            this.lasertime[i] = 0;
+            this.lasermode[i] = mode;
+            this.laserX[i] = x;
+            this.laserY[i] = y;
+            this.laserXmove[i] = 0.0F;
+            this.laserYmove[i] = 0.0F;
+            this.laserspeed[i] = speed;
+            this.laserkakudo[i] = kakudo;
+            this.laserhaba_k[i] = haba_k;
+            this.laserendtime[i] = endtime;
+            this.laserholdnumber0[i] = holdnumber0;
+            this.laserholdnumber1[i] = holdnumber1;
+            this.laserholdnumber2[i] = holdnumber2;
             break;
          }
       }
    }
 
-   void itemIn(float var1, float var2, int var3, int var4) {
-      int var5;
-      for (var5 = 0; var5 < this.item_see_max; var5++) {
-         if (this.itemmode[var5] == 0) {
-            this.itemtime[var5] = 0;
-            this.itemmode[var5] = var3;
-            this.itemX[var5] = var1;
-            this.itemY[var5] = var2;
-            this.itemXmove[var5] = 0.0F;
-            this.itemYmove[var5] = -4.0F;
-            if (var3 == 22) {
-               this.itemYmove[var5] = -7.0F;
+   void itemIn(float x, float y, int mode, int kaishuu) {
+      int i;
+      for (i = 0; i < this.item_see_max; i++) {
+         if (this.itemmode[i] == 0) {
+            this.itemtime[i] = 0;
+            this.itemmode[i] = mode;
+            this.itemX[i] = x;
+            this.itemY[i] = y;
+            this.itemXmove[i] = 0.0F;
+            this.itemYmove[i] = -4.0F;
+            if (mode == 22) {
+               this.itemYmove[i] = -7.0F;
             }
 
-            this.itemkaishuu[var5] = var4;
-            var5 = -999;
+            this.itemkaishuu[i] = kaishuu;
+            i = -999;
             break;
          }
       }
 
-      if (var5 != -999) {
-         for (int var6 = this.item_see_max; var6 < this.item_max; var6++) {
-            if (this.itemmode[var6] == 0) {
-               this.itemtime[var6] = 0;
-               this.itemmode[var6] = var3;
-               this.itemX[var6] = var1;
-               this.itemY[var6] = var2;
-               this.itemXmove[var6] = 0.0F;
-               this.itemYmove[var6] = -4.0F;
-               if (var3 == 22) {
-                  this.itemYmove[var6] = -7.0F;
+      if (i != -999) {
+         for (int j = this.item_see_max; j < this.item_max; j++) {
+            if (this.itemmode[j] == 0) {
+               this.itemtime[j] = 0;
+               this.itemmode[j] = mode;
+               this.itemX[j] = x;
+               this.itemY[j] = y;
+               this.itemXmove[j] = 0.0F;
+               this.itemYmove[j] = -4.0F;
+               if (mode == 22) {
+                  this.itemYmove[j] = -7.0F;
                }
 
-               this.itemkaishuu[var6] = var4;
-               this.item_see_max = var6 + 1;
+               this.itemkaishuu[j] = kaishuu;
+               this.item_see_max = j + 1;
                break;
             }
          }
@@ -802,81 +802,81 @@ public class tohoSINMACanvas extends Canvas implements MediaListener {
       }
    }
 
-   void getPICNUM(int var1) {
-      this.tamarange[var1] = (this.tamarange[var1] + 720000.0F + 9.0F) % 360.0F;
-      if (this.tamarange[var1] < 180.0F) {
-         this.tamapicnum[var1] = (int)(this.tamarange[var1] / 18.0F);
+   void getPICNUM(int index) {
+      this.tamarange[index] = (this.tamarange[index] + 720000.0F + 9.0F) % 360.0F;
+      if (this.tamarange[index] < 180.0F) {
+         this.tamapicnum[index] = (int)(this.tamarange[index] / 18.0F);
       } else {
-         this.tamapicnum[var1] = 21 - (int)((this.tamarange[var1] - 180.0F) / 18.0F);
+         this.tamapicnum[index] = 21 - (int)((this.tamarange[index] - 180.0F) / 18.0F);
       }
    }
 
-   void makecolor(int var1) {
-      if (this.laserholdnumber2[var1] == 0.0F) {
+   void makecolor(int index) {
+      if (this.laserholdnumber2[index] == 0.0F) {
          this.g.setColor(Graphics.getColorOfRGB(236, 252, 236));
       }
 
-      if (this.laserholdnumber2[var1] == 1.0F) {
+      if (this.laserholdnumber2[index] == 1.0F) {
          this.g.setColor(Graphics.getColorOfRGB(206, 236, 255));
       }
 
-      if (this.laserholdnumber2[var1] == 2.0F) {
+      if (this.laserholdnumber2[index] == 2.0F) {
          this.g.setColor(Graphics.getColorOfRGB(255, 0, 0));
       }
 
-      if (this.laserholdnumber2[var1] == 3.0F) {
+      if (this.laserholdnumber2[index] == 3.0F) {
          this.g.setColor(Graphics.getColorOfRGB(255, 255, 235));
       }
 
-      if (this.laserholdnumber2[var1] == 4.0F) {
+      if (this.laserholdnumber2[index] == 4.0F) {
          this.g.setColor(Graphics.getColorOfRGB(255, 235, 255));
       }
 
-      if (this.laserholdnumber2[var1] == 5.0F) {
+      if (this.laserholdnumber2[index] == 5.0F) {
          this.g.setColor(Graphics.getColorOfRGB(230, 255, 255));
       }
    }
 
-   void makecolor2(int var1) {
-      if (this.laserholdnumber2[var1] == 0.0F) {
+   void makecolor2(int index) {
+      if (this.laserholdnumber2[index] == 0.0F) {
          this.g.setColor(Graphics.getColorOfRGB(0, 255, 0));
       }
 
-      if (this.laserholdnumber2[var1] == 1.0F) {
+      if (this.laserholdnumber2[index] == 1.0F) {
          this.g.setColor(Graphics.getColorOfRGB(0, 0, 255));
       }
 
-      if (this.laserholdnumber2[var1] == 2.0F) {
+      if (this.laserholdnumber2[index] == 2.0F) {
          this.g.setColor(Graphics.getColorOfRGB(255, 0, 0));
       }
 
-      if (this.laserholdnumber2[var1] == 3.0F) {
+      if (this.laserholdnumber2[index] == 3.0F) {
          this.g.setColor(Graphics.getColorOfRGB(255, 255, 0));
       }
 
-      if (this.laserholdnumber2[var1] == 4.0F) {
+      if (this.laserholdnumber2[index] == 4.0F) {
          this.g.setColor(Graphics.getColorOfRGB(220, 20, 255));
       }
 
-      if (this.laserholdnumber2[var1] == 5.0F) {
+      if (this.laserholdnumber2[index] == 5.0F) {
          this.g.setColor(Graphics.getColorOfRGB(100, 255, 255));
       }
    }
 
-   void see_hit_laser(int var1) {
-      float var2 = this.peopleX;
-      float var3 = this.peopleY;
-      var2 -= this.laserX[var1];
-      var3 -= this.laserY[var1];
-      float var4 = 360.0F - this.laserkakudo[var1];
-      float var5 = var2 * this.cos[(int)((var4 * 10.0F + 3.6E7F) % 3600.0F)] - var3 * this.sin[(int)((var4 * 10.0F + 3.6E7F) % 3600.0F)];
-      float var6 = var2 * this.sin[(int)((var4 * 10.0F + 3.6E7F) % 3600.0F)] + var3 * this.cos[(int)((var4 * 10.0F + 3.6E7F) % 3600.0F)];
-      if (Math.abs(var6) < this.laserhaba[var1] - 1.0F && var5 > 0.0F && var5 < this.lasernagasa[var1] && this.peoplemuteki == 0) {
+   void see_hit_laser(int index) {
+      float x = this.peopleX;
+      float y = this.peopleY;
+      x -= this.laserX[index];
+      y -= this.laserY[index];
+      float kakudo = 360.0F - this.laserkakudo[index];
+      float var5 = x * this.cos[(int)((kakudo * 10.0F + 3.6E7F) % 3600.0F)] - y * this.sin[(int)((kakudo * 10.0F + 3.6E7F) % 3600.0F)];
+      float var6 = x * this.sin[(int)((kakudo * 10.0F + 3.6E7F) % 3600.0F)] + y * this.cos[(int)((kakudo * 10.0F + 3.6E7F) % 3600.0F)];
+      if (Math.abs(var6) < this.laserhaba[index] - 1.0F && var5 > 0.0F && var5 < this.lasernagasa[index] && this.peoplemuteki == 0) {
          effectIn(this.peopleX, this.peopleY, 14, 0, 0, 0);
          this.peoplemuteki = 1;
       }
 
-      if (Math.abs(var6) < this.laserhaba[var1] + 4.0F && var5 > 0.0F && var5 < this.lasernagasa[var1]) {
+      if (Math.abs(var6) < this.laserhaba[index] + 4.0F && var5 > 0.0F && var5 < this.lasernagasa[index]) {
          effectIn(this.peopleX, this.peopleY, 24, 0, 0, 0);
          if (this.peoplekasuri < 100000) {
             this.peoplekasuri++;
@@ -886,81 +886,81 @@ public class tohoSINMACanvas extends Canvas implements MediaListener {
       }
    }
 
-   void getemove(int var1, int var2, int var3) {
-      float var4 = (this.rand.nextInt() >>> 1) % 60 - 30;
-      if (this.peopleX < this.eX[var1]) {
-         var4 += 180.0F;
+   void getemove(int index, int var2, int var3) {
+      float angle = (this.rand.nextInt() >>> 1) % 60 - 30;
+      if (this.peopleX < this.eX[index]) {
+         angle += 180.0F;
       }
 
-      if (this.eX[var1] + var3 * var2 * Math.cos(var4 * 3.1415 / 180.0) < 10.0
-         || this.eX[var1] + var3 * var2 * Math.cos(var4 * 3.1415 / 180.0) > 190.0
-         || this.eY[var1] + var3 * var2 * Math.sin(var4 * 3.1415 / 180.0) < 10.0
-         || this.eY[var1] + var3 * var2 * Math.sin(var4 * 3.1415 / 180.0) > 100.0) {
-         var4 += 90.0F;
-         if (this.eX[var1] + var3 * var2 * Math.cos(var4 * 3.1415 / 180.0) < 10.0
-            || this.eX[var1] + var3 * var2 * Math.cos(var4 * 3.1415 / 180.0) > 190.0
-            || this.eY[var1] + var3 * var2 * Math.sin(var4 * 3.1415 / 180.0) < 10.0
-            || this.eY[var1] + var3 * var2 * Math.sin(var4 * 3.1415 / 180.0) > 100.0) {
-            var4 += 90.0F;
-            if (this.eX[var1] + var3 * var2 * Math.cos(var4 * 3.1415 / 180.0) < 10.0
-               || this.eX[var1] + var3 * var2 * Math.cos(var4 * 3.1415 / 180.0) > 190.0
-               || this.eY[var1] + var3 * var2 * Math.sin(var4 * 3.1415 / 180.0) < 10.0
-               || this.eY[var1] + var3 * var2 * Math.sin(var4 * 3.1415 / 180.0) > 100.0) {
-               var4 += 90.0F;
-               if (this.eX[var1] + var3 * var2 * Math.cos(var4 * 3.1415 / 180.0) < 10.0
-                  || this.eX[var1] + var3 * var2 * Math.cos(var4 * 3.1415 / 180.0) > 190.0
-                  || this.eY[var1] + var3 * var2 * Math.sin(var4 * 3.1415 / 180.0) < 10.0
-                  || this.eY[var1] + var3 * var2 * Math.sin(var4 * 3.1415 / 180.0) > 100.0) {
+      if (this.eX[index] + var3 * var2 * Math.cos(angle * 3.1415 / 180.0) < 10.0
+         || this.eX[index] + var3 * var2 * Math.cos(angle * 3.1415 / 180.0) > 190.0
+         || this.eY[index] + var3 * var2 * Math.sin(angle * 3.1415 / 180.0) < 10.0
+         || this.eY[index] + var3 * var2 * Math.sin(angle * 3.1415 / 180.0) > 100.0) {
+         angle += 90.0F;
+         if (this.eX[index] + var3 * var2 * Math.cos(angle * 3.1415 / 180.0) < 10.0
+            || this.eX[index] + var3 * var2 * Math.cos(angle * 3.1415 / 180.0) > 190.0
+            || this.eY[index] + var3 * var2 * Math.sin(angle * 3.1415 / 180.0) < 10.0
+            || this.eY[index] + var3 * var2 * Math.sin(angle * 3.1415 / 180.0) > 100.0) {
+            angle += 90.0F;
+            if (this.eX[index] + var3 * var2 * Math.cos(angle * 3.1415 / 180.0) < 10.0
+               || this.eX[index] + var3 * var2 * Math.cos(angle * 3.1415 / 180.0) > 190.0
+               || this.eY[index] + var3 * var2 * Math.sin(angle * 3.1415 / 180.0) < 10.0
+               || this.eY[index] + var3 * var2 * Math.sin(angle * 3.1415 / 180.0) > 100.0) {
+               angle += 90.0F;
+               if (this.eX[index] + var3 * var2 * Math.cos(angle * 3.1415 / 180.0) < 10.0
+                  || this.eX[index] + var3 * var2 * Math.cos(angle * 3.1415 / 180.0) > 190.0
+                  || this.eY[index] + var3 * var2 * Math.sin(angle * 3.1415 / 180.0) < 10.0
+                  || this.eY[index] + var3 * var2 * Math.sin(angle * 3.1415 / 180.0) > 100.0) {
                   var3 = 0;
                }
             }
          }
       }
 
-      this.eXmove[var1] = (float)(var3 * Math.cos(var4 * 3.1415 / 180.0));
-      this.eYmove[var1] = (float)(var3 * Math.sin(var4 * 3.1415 / 180.0));
+      this.eXmove[index] = (float)(var3 * Math.cos(angle * 3.1415 / 180.0));
+      this.eYmove[index] = (float)(var3 * Math.sin(angle * 3.1415 / 180.0));
    }
 
-   void getemove2(int var1, int var2, int var3) {
-      float var4 = (this.rand.nextInt() >>> 1) % 360;
-      if (this.eX[var1] + var3 * var2 * Math.cos(var4 * 3.1415 / 180.0) < 10.0
-         || this.eX[var1] + var3 * var2 * Math.cos(var4 * 3.1415 / 180.0) > 190.0
-         || this.eY[var1] + var3 * var2 * Math.sin(var4 * 3.1415 / 180.0) < 10.0
-         || this.eY[var1] + var3 * var2 * Math.sin(var4 * 3.1415 / 180.0) > 230.0) {
-         var4 += 90.0F;
-         if (this.eX[var1] + var3 * var2 * Math.cos(var4 * 3.1415 / 180.0) < 10.0
-            || this.eX[var1] + var3 * var2 * Math.cos(var4 * 3.1415 / 180.0) > 190.0
-            || this.eY[var1] + var3 * var2 * Math.sin(var4 * 3.1415 / 180.0) < 10.0
-            || this.eY[var1] + var3 * var2 * Math.sin(var4 * 3.1415 / 180.0) > 230.0) {
-            var4 += 90.0F;
-            if (this.eX[var1] + var3 * var2 * Math.cos(var4 * 3.1415 / 180.0) < 10.0
-               || this.eX[var1] + var3 * var2 * Math.cos(var4 * 3.1415 / 180.0) > 190.0
-               || this.eY[var1] + var3 * var2 * Math.sin(var4 * 3.1415 / 180.0) < 10.0
-               || this.eY[var1] + var3 * var2 * Math.sin(var4 * 3.1415 / 180.0) > 230.0) {
-               var4 += 90.0F;
-               if (this.eX[var1] + var3 * var2 * Math.cos(var4 * 3.1415 / 180.0) < 10.0
-                  || this.eX[var1] + var3 * var2 * Math.cos(var4 * 3.1415 / 180.0) > 190.0
-                  || this.eY[var1] + var3 * var2 * Math.sin(var4 * 3.1415 / 180.0) < 10.0
-                  || this.eY[var1] + var3 * var2 * Math.sin(var4 * 3.1415 / 180.0) > 230.0) {
+   void getemove2(int index, int var2, int var3) {
+      float angle = (this.rand.nextInt() >>> 1) % 360;
+      if (this.eX[index] + var3 * var2 * Math.cos(angle * 3.1415 / 180.0) < 10.0
+         || this.eX[index] + var3 * var2 * Math.cos(angle * 3.1415 / 180.0) > 190.0
+         || this.eY[index] + var3 * var2 * Math.sin(angle * 3.1415 / 180.0) < 10.0
+         || this.eY[index] + var3 * var2 * Math.sin(angle * 3.1415 / 180.0) > 230.0) {
+         angle += 90.0F;
+         if (this.eX[index] + var3 * var2 * Math.cos(angle * 3.1415 / 180.0) < 10.0
+            || this.eX[index] + var3 * var2 * Math.cos(angle * 3.1415 / 180.0) > 190.0
+            || this.eY[index] + var3 * var2 * Math.sin(angle * 3.1415 / 180.0) < 10.0
+            || this.eY[index] + var3 * var2 * Math.sin(angle * 3.1415 / 180.0) > 230.0) {
+            angle += 90.0F;
+            if (this.eX[index] + var3 * var2 * Math.cos(angle * 3.1415 / 180.0) < 10.0
+               || this.eX[index] + var3 * var2 * Math.cos(angle * 3.1415 / 180.0) > 190.0
+               || this.eY[index] + var3 * var2 * Math.sin(angle * 3.1415 / 180.0) < 10.0
+               || this.eY[index] + var3 * var2 * Math.sin(angle * 3.1415 / 180.0) > 230.0) {
+               angle += 90.0F;
+               if (this.eX[index] + var3 * var2 * Math.cos(angle * 3.1415 / 180.0) < 10.0
+                  || this.eX[index] + var3 * var2 * Math.cos(angle * 3.1415 / 180.0) > 190.0
+                  || this.eY[index] + var3 * var2 * Math.sin(angle * 3.1415 / 180.0) < 10.0
+                  || this.eY[index] + var3 * var2 * Math.sin(angle * 3.1415 / 180.0) > 230.0) {
                   var3 = 0;
                }
             }
          }
       }
 
-      this.eXmove[var1] = (float)(var3 * Math.cos(var4 * 3.1415 / 180.0));
-      this.eYmove[var1] = (float)(var3 * Math.sin(var4 * 3.1415 / 180.0));
+      this.eXmove[index] = (float)(var3 * Math.cos(angle * 3.1415 / 180.0));
+      this.eYmove[index] = (float)(var3 * Math.sin(angle * 3.1415 / 180.0));
    }
 
-   float getkakudo(float var1, float var2, float var3, float var4) {
-      float var5 = var3 - var1;
-      float var6 = var4 - var2;
-      float var7 = FastMath.atan2(var5, var6);
+   float getkakudo(float x1, float y1, float x2, float y2) {
+      float dx = x2 - x1;
+      float dy = y2 - y1;
+      float kakudo = FastMath.atan2(dx, dy);
       // DoJa-specific fix, no longer needed
       // if (var6 < 0.0F) {
       //    var7 += 180.0F;
       // }
-      return var7;
+      return kakudo;
    }
 
    void makefirst() {
@@ -1050,132 +1050,132 @@ public class tohoSINMACanvas extends Canvas implements MediaListener {
       kaiwaname = "";
    }
 
-   void makekaiwanext(int var1) {
+   void makekaiwanext(int index) {
       this.cyc = 0;
-      if (effectholdnumber2[var1] == 0 && peoplebomkind % 2 == 0 && effectholdnumber0[var1] == 8) {
+      if (effectholdnumber2[index] == 0 && peoplebomkind % 2 == 0 && effectholdnumber0[index] == 8) {
          this.cyc = 1;
       }
 
-      if (effectholdnumber2[var1] == 0 && peoplebomkind % 2 == 1 && effectholdnumber0[var1] == 10) {
+      if (effectholdnumber2[index] == 0 && peoplebomkind % 2 == 1 && effectholdnumber0[index] == 10) {
          this.cyc = 1;
       }
 
-      if (effectholdnumber2[var1] == 1 && peoplebomkind % 2 == 0 && effectholdnumber0[var1] == 3) {
+      if (effectholdnumber2[index] == 1 && peoplebomkind % 2 == 0 && effectholdnumber0[index] == 3) {
          this.cyc = 1;
       }
 
-      if (effectholdnumber2[var1] == 1 && peoplebomkind % 2 == 1 && effectholdnumber0[var1] == 2) {
+      if (effectholdnumber2[index] == 1 && peoplebomkind % 2 == 1 && effectholdnumber0[index] == 2) {
          this.cyc = 1;
       }
 
-      if (effectholdnumber2[var1] == 2 && peoplebomkind % 2 == 0 && effectholdnumber0[var1] == 10) {
+      if (effectholdnumber2[index] == 2 && peoplebomkind % 2 == 0 && effectholdnumber0[index] == 10) {
          this.cyc = 1;
       }
 
-      if (effectholdnumber2[var1] == 2 && peoplebomkind % 2 == 1 && effectholdnumber0[var1] == 10) {
+      if (effectholdnumber2[index] == 2 && peoplebomkind % 2 == 1 && effectholdnumber0[index] == 10) {
          this.cyc = 1;
       }
 
-      if (effectholdnumber2[var1] == 3 && peoplebomkind % 2 == 0 && effectholdnumber0[var1] == 5) {
+      if (effectholdnumber2[index] == 3 && peoplebomkind % 2 == 0 && effectholdnumber0[index] == 5) {
          this.cyc = 1;
       }
 
-      if (effectholdnumber2[var1] == 3 && peoplebomkind % 2 == 1 && effectholdnumber0[var1] == 6) {
+      if (effectholdnumber2[index] == 3 && peoplebomkind % 2 == 1 && effectholdnumber0[index] == 6) {
          this.cyc = 1;
       }
 
-      if (effectholdnumber2[var1] == 4 && peoplebomkind % 2 == 0 && effectholdnumber0[var1] == 10) {
+      if (effectholdnumber2[index] == 4 && peoplebomkind % 2 == 0 && effectholdnumber0[index] == 10) {
          this.cyc = 1;
       }
 
-      if (effectholdnumber2[var1] == 4 && peoplebomkind % 2 == 1 && effectholdnumber0[var1] == 15) {
+      if (effectholdnumber2[index] == 4 && peoplebomkind % 2 == 1 && effectholdnumber0[index] == 15) {
          this.cyc = 1;
       }
 
-      if (effectholdnumber2[var1] == 5 && peoplebomkind % 2 == 0 && effectholdnumber0[var1] == 7) {
+      if (effectholdnumber2[index] == 5 && peoplebomkind % 2 == 0 && effectholdnumber0[index] == 7) {
          this.cyc = 1;
       }
 
-      if (effectholdnumber2[var1] == 5 && peoplebomkind % 2 == 1 && effectholdnumber0[var1] == 7) {
+      if (effectholdnumber2[index] == 5 && peoplebomkind % 2 == 1 && effectholdnumber0[index] == 7) {
          this.cyc = 1;
       }
 
-      if (effectholdnumber2[var1] == 6 && peoplebomkind % 2 == 0 && effectholdnumber0[var1] == 10) {
+      if (effectholdnumber2[index] == 6 && peoplebomkind % 2 == 0 && effectholdnumber0[index] == 10) {
          this.cyc = 1;
       }
 
-      if (effectholdnumber2[var1] == 6 && peoplebomkind % 2 == 1 && effectholdnumber0[var1] == 11) {
+      if (effectholdnumber2[index] == 6 && peoplebomkind % 2 == 1 && effectholdnumber0[index] == 11) {
          this.cyc = 1;
       }
 
-      if (effectholdnumber2[var1] == 7 && peoplebomkind % 2 == 0 && effectholdnumber0[var1] == 6) {
+      if (effectholdnumber2[index] == 7 && peoplebomkind % 2 == 0 && effectholdnumber0[index] == 6) {
          this.cyc = 1;
       }
 
-      if (effectholdnumber2[var1] == 7 && peoplebomkind % 2 == 1 && effectholdnumber0[var1] == 11) {
+      if (effectholdnumber2[index] == 7 && peoplebomkind % 2 == 1 && effectholdnumber0[index] == 11) {
          this.cyc = 1;
       }
 
-      if (effectholdnumber2[var1] == 8 && peoplebomkind % 2 == 0 && effectholdnumber0[var1] == 9) {
+      if (effectholdnumber2[index] == 8 && peoplebomkind % 2 == 0 && effectholdnumber0[index] == 9) {
          this.cyc = 1;
       }
 
-      if (effectholdnumber2[var1] == 8 && peoplebomkind % 2 == 1 && effectholdnumber0[var1] == 11) {
+      if (effectholdnumber2[index] == 8 && peoplebomkind % 2 == 1 && effectholdnumber0[index] == 11) {
          this.cyc = 1;
       }
 
-      if (effectholdnumber2[var1] == 9 && peoplebomkind % 2 == 0 && effectholdnumber0[var1] == 3) {
+      if (effectholdnumber2[index] == 9 && peoplebomkind % 2 == 0 && effectholdnumber0[index] == 3) {
          this.cyc = 1;
       }
 
-      if (effectholdnumber2[var1] == 9 && peoplebomkind % 2 == 1 && effectholdnumber0[var1] == 7) {
+      if (effectholdnumber2[index] == 9 && peoplebomkind % 2 == 1 && effectholdnumber0[index] == 7) {
          this.cyc = 1;
       }
 
-      if (effectholdnumber2[var1] == 10 && peoplebomkind % 2 == 0 && effectholdnumber0[var1] == 18) {
+      if (effectholdnumber2[index] == 10 && peoplebomkind % 2 == 0 && effectholdnumber0[index] == 18) {
          this.cyc = 1;
       }
 
-      if (effectholdnumber2[var1] == 10 && peoplebomkind % 2 == 1 && effectholdnumber0[var1] == 17) {
+      if (effectholdnumber2[index] == 10 && peoplebomkind % 2 == 1 && effectholdnumber0[index] == 17) {
          this.cyc = 1;
       }
 
-      if (effectholdnumber2[var1] == 11 && peoplebomkind % 2 == 0 && effectholdnumber0[var1] == 14) {
+      if (effectholdnumber2[index] == 11 && peoplebomkind % 2 == 0 && effectholdnumber0[index] == 14) {
          this.cyc = 1;
       }
 
-      if (effectholdnumber2[var1] == 11 && peoplebomkind % 2 == 1 && effectholdnumber0[var1] == 12) {
+      if (effectholdnumber2[index] == 11 && peoplebomkind % 2 == 1 && effectholdnumber0[index] == 12) {
          this.cyc = 1;
       }
 
-      if (effectholdnumber2[var1] == 12 && peoplebomkind % 2 == 0 && effectholdnumber0[var1] == 4) {
+      if (effectholdnumber2[index] == 12 && peoplebomkind % 2 == 0 && effectholdnumber0[index] == 4) {
          this.cyc = 1;
       }
 
-      if (effectholdnumber2[var1] == 12 && peoplebomkind % 2 == 1 && effectholdnumber0[var1] == 5) {
+      if (effectholdnumber2[index] == 12 && peoplebomkind % 2 == 1 && effectholdnumber0[index] == 5) {
          this.cyc = 1;
       }
 
-      if (effectholdnumber2[var1] == 13 && peoplebomkind % 2 == 0 && effectholdnumber0[var1] == 5) {
+      if (effectholdnumber2[index] == 13 && peoplebomkind % 2 == 0 && effectholdnumber0[index] == 5) {
          this.cyc = 1;
       }
 
-      if (effectholdnumber2[var1] == 13 && peoplebomkind % 2 == 1 && effectholdnumber0[var1] == 3) {
+      if (effectholdnumber2[index] == 13 && peoplebomkind % 2 == 1 && effectholdnumber0[index] == 3) {
          this.cyc = 1;
       }
 
       if (this.cyc == 1) {
          this.etime[this.bossnum] = 0;
          this.edoing[this.bossnum]++;
-         effectholdnumber1[var1] = 2;
-         effecttime[var1] = 0;
+         effectholdnumber1[index] = 2;
+         effecttime[index] = 0;
          this.peoplemuteki = 0;
          this.peoplenonshot = 0;
-         if (effectholdnumber2[var1] % 2 == 1 && effectholdnumber2[var1] != 11 && effectholdnumber2[var1] != 13) {
+         if (effectholdnumber2[index] % 2 == 1 && effectholdnumber2[index] != 11 && effectholdnumber2[index] != 13) {
             effectIn(0.0F, 0.0F, 20, 0, 0, 0);
          }
 
-         if (effectholdnumber2[var1] == 12) {
+         if (effectholdnumber2[index] == 12) {
             this.stagetime = 85000;
          }
       }

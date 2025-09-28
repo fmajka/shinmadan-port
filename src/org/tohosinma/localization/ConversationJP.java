@@ -5,10 +5,10 @@ import org.tohosinma.decompiled.tohokaiwa;
 
 public class ConversationJP implements Conversation {
 
-    public void getkaiwa(int var0, int var1) {
-      if (var0 == 0) {
+    public void getkaiwa(int dialogueId, int speechId) {
+      if (dialogueId == 0) {
          if (tohoSINMACanvas.peoplebomkind % 2 == 0) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -17,7 +17,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "一応もう春よ？";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -26,7 +26,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 2) {
+            } else if (speechId == 2) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -37,7 +37,7 @@ public class ConversationJP implements Conversation {
                   tohokaiwa.effectNEXT = 1;
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 3) {
+            } else if (speechId == 3) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -47,7 +47,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 4) {
+            } else if (speechId == 4) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 1);
@@ -57,7 +57,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 5) {
+            } else if (speechId == 5) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -67,7 +67,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "あたいがたおしてやるんだから！";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 6) {
+            } else if (speechId == 6) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 1);
@@ -77,7 +77,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "馬鹿を倒しなさい。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 7 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 7 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 4, 1, 0);
@@ -87,7 +87,7 @@ public class ConversationJP implements Conversation {
                tohokaiwa.effectflag = 1;
             }
          } else if (tohoSINMACanvas.peoplebomkind % 2 == 1) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -96,7 +96,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "いうんだ？";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -105,7 +105,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 2) {
+            } else if (speechId == 2) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 1);
@@ -114,7 +114,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "行くつもりなの、魔界に？";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 3) {
+            } else if (speechId == 3) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -123,7 +123,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 4) {
+            } else if (speechId == 4) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 1);
@@ -132,7 +132,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 5) {
+            } else if (speechId == 5) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -141,7 +141,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 6) {
+            } else if (speechId == 6) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -152,7 +152,7 @@ public class ConversationJP implements Conversation {
                   tohokaiwa.effectNEXT = 1;
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 7) {
+            } else if (speechId == 7) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 1);
@@ -162,7 +162,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "原因はこいつね。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 8) {
+            } else if (speechId == 8) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -172,7 +172,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "倒せば寒くなくなるぜ。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 9 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 9 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 4, 1, 1);
@@ -182,9 +182,9 @@ public class ConversationJP implements Conversation {
                tohokaiwa.effectflag = 1;
             }
          }
-      } else if (var0 == 1) {
+      } else if (dialogueId == 1) {
          if (tohoSINMACanvas.peoplebomkind % 2 == 0) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -193,7 +193,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 1);
@@ -202,7 +202,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 2 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 2 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 1);
                tohoSINMACanvas.kaiwa1 = "あの子が妖精でなくなる";
@@ -211,7 +211,7 @@ public class ConversationJP implements Conversation {
                tohokaiwa.effectflag = 1;
             }
          } else if (tohoSINMACanvas.peoplebomkind % 2 == 1) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -221,7 +221,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 1 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
                tohoSINMACanvas.kaiwa1 = "ああそうだ、";
@@ -230,9 +230,9 @@ public class ConversationJP implements Conversation {
                tohokaiwa.effectflag = 1;
             }
          }
-      } else if (var0 == 2) {
+      } else if (dialogueId == 2) {
          if (tohoSINMACanvas.peoplebomkind % 2 == 0) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -241,7 +241,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -252,7 +252,7 @@ public class ConversationJP implements Conversation {
                   tohokaiwa.effectNEXT = 1;
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 2) {
+            } else if (speechId == 2) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -262,7 +262,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "何か用かしら？";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 3) {
+            } else if (speechId == 3) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 1);
@@ -272,7 +272,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "ないわよ。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 4) {
+            } else if (speechId == 4) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -282,7 +282,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "もらえない…。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 5) {
+            } else if (speechId == 5) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -292,7 +292,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 6) {
+            } else if (speechId == 6) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -302,7 +302,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "めんどくさい時に…。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 7) {
+            } else if (speechId == 7) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 1);
@@ -312,7 +312,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 8) {
+            } else if (speechId == 8) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -322,7 +322,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 9 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 9 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 5, 1, 1);
@@ -332,7 +332,7 @@ public class ConversationJP implements Conversation {
                tohokaiwa.effectflag = 1;
             }
          } else if (tohoSINMACanvas.peoplebomkind % 2 == 1) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -343,7 +343,7 @@ public class ConversationJP implements Conversation {
                   tohokaiwa.effectNEXT = 1;
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -353,7 +353,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 2) {
+            } else if (speechId == 2) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -363,7 +363,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 3) {
+            } else if (speechId == 3) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -373,7 +373,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "失敗ね。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 4) {
+            } else if (speechId == 4) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -383,7 +383,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 5) {
+            } else if (speechId == 5) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -393,7 +393,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 6) {
+            } else if (speechId == 6) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 1);
@@ -403,7 +403,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "している、";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 7) {
+            } else if (speechId == 7) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 1);
@@ -413,7 +413,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 8) {
+            } else if (speechId == 8) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -423,7 +423,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 9 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 9 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 5, 1, 1);
@@ -433,9 +433,9 @@ public class ConversationJP implements Conversation {
                tohokaiwa.effectflag = 1;
             }
          }
-      } else if (var0 == 3) {
+      } else if (dialogueId == 3) {
          if (tohoSINMACanvas.peoplebomkind % 2 == 0) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -445,7 +445,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -456,7 +456,7 @@ public class ConversationJP implements Conversation {
                   tohokaiwa.effectNEXT = 1;
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 2) {
+            } else if (speechId == 2) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -466,7 +466,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 3) {
+            } else if (speechId == 3) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 1);
@@ -476,7 +476,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "さあ霊夢、行くわよ。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 4 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 4 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 5, 1, 1);
@@ -486,7 +486,7 @@ public class ConversationJP implements Conversation {
                tohokaiwa.effectflag = 1;
             }
          } else if (tohoSINMACanvas.peoplebomkind % 2 == 1) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -497,7 +497,7 @@ public class ConversationJP implements Conversation {
                   tohokaiwa.effectNEXT = 1;
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -507,7 +507,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 2) {
+            } else if (speechId == 2) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -517,7 +517,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 3) {
+            } else if (speechId == 3) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 1);
@@ -527,7 +527,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 4) {
+            } else if (speechId == 4) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -537,7 +537,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 5 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 5 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 1);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 5, 1, 0);
@@ -547,9 +547,9 @@ public class ConversationJP implements Conversation {
                tohokaiwa.effectflag = 1;
             }
          }
-      } else if (var0 == 4) {
+      } else if (dialogueId == 4) {
          if (tohoSINMACanvas.peoplebomkind % 2 == 0) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 1);
@@ -558,7 +558,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -568,7 +568,7 @@ public class ConversationJP implements Conversation {
                   tohokaiwa.effectNEXT = 1;
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 2) {
+            } else if (speechId == 2) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -578,7 +578,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 3) {
+            } else if (speechId == 3) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -588,7 +588,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 4) {
+            } else if (speechId == 4) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -598,7 +598,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "大スクープ間違いなしです！";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 5) {
+            } else if (speechId == 5) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -608,7 +608,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 6) {
+            } else if (speechId == 6) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -618,7 +618,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 7) {
+            } else if (speechId == 7) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 1);
@@ -628,7 +628,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 8) {
+            } else if (speechId == 8) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -638,7 +638,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "面倒な連れは１人で十分よ。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 9 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 9 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 1);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 6, 1, 0);
@@ -648,7 +648,7 @@ public class ConversationJP implements Conversation {
                tohokaiwa.effectflag = 1;
             }
          } else if (tohoSINMACanvas.peoplebomkind % 2 == 1) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -657,7 +657,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 1);
@@ -666,7 +666,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 2) {
+            } else if (speechId == 2) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -675,7 +675,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "アルティメットスパーク！";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 3) {
+            } else if (speechId == 3) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = "";
                   tohoSINMACanvas.kaiwa2 = "";
@@ -683,7 +683,7 @@ public class ConversationJP implements Conversation {
                   tohokaiwa.effectNEXT = 1;
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 4) {
+            } else if (speechId == 4) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 1);
@@ -692,7 +692,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 5) {
+            } else if (speechId == 5) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -701,7 +701,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 6) {
+            } else if (speechId == 6) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -710,7 +710,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 7) {
+            } else if (speechId == 7) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -719,7 +719,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 8) {
+            } else if (speechId == 8) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -730,7 +730,7 @@ public class ConversationJP implements Conversation {
                   tohokaiwa.effectNEXT = 1;
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 9) {
+            } else if (speechId == 9) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 1);
@@ -740,7 +740,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 10) {
+            } else if (speechId == 10) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -750,7 +750,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "外出とは珍しい。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 11) {
+            } else if (speechId == 11) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 1);
@@ -760,7 +760,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 12) {
+            } else if (speechId == 12) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -770,7 +770,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 13) {
+            } else if (speechId == 13) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -780,7 +780,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 14 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 14 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 6, 1, 1);
@@ -790,9 +790,9 @@ public class ConversationJP implements Conversation {
                tohokaiwa.effectflag = 1;
             }
          }
-      } else if (var0 == 5) {
+      } else if (dialogueId == 5) {
          if (tohoSINMACanvas.peoplebomkind % 2 == 0) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -802,7 +802,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "断念します。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 1);
@@ -813,7 +813,7 @@ public class ConversationJP implements Conversation {
                   tohokaiwa.effectNEXT = 1;
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 2) {
+            } else if (speechId == 2) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -823,7 +823,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 3) {
+            } else if (speechId == 3) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 6, 1, 0);
                   tohoSINMACanvas.kaiwa1 = "・・・・・。";
@@ -831,7 +831,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 4) {
+            } else if (speechId == 4) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 6, 1, 1);
                   tohoSINMACanvas.kaiwa1 = "ふっふっふ、これしきで";
@@ -839,7 +839,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 5) {
+            } else if (speechId == 5) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 6, 1, 1);
                   tohoSINMACanvas.kaiwa1 = "この河童式光学迷彩を装備して、";
@@ -847,7 +847,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 6 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 6 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 6, 1, 1);
                tohoSINMACanvas.kaiwa1 = "あれ、進めない？？";
                tohoSINMACanvas.kaiwa2 = "";
@@ -855,7 +855,7 @@ public class ConversationJP implements Conversation {
                tohokaiwa.effectflag = 1;
             }
          } else if (tohoSINMACanvas.peoplebomkind % 2 == 1) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -866,7 +866,7 @@ public class ConversationJP implements Conversation {
                   tohokaiwa.effectNEXT = 1;
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -876,7 +876,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "魔界へＧＯだな！";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 2) {
+            } else if (speechId == 2) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -886,7 +886,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "しばらく入れませんよ？";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 3) {
+            } else if (speechId == 3) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -896,7 +896,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "問題ないぜ。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 4) {
+            } else if (speechId == 4) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -906,7 +906,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "ああスクープが逃げていく…";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 5) {
+            } else if (speechId == 5) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -916,7 +916,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 6 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 6 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 1);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 6, 1, 0);
@@ -926,9 +926,9 @@ public class ConversationJP implements Conversation {
                tohokaiwa.effectflag = 1;
             }
          }
-      } else if (var0 == 6) {
+      } else if (dialogueId == 6) {
          if (tohoSINMACanvas.peoplebomkind % 2 == 0) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -937,7 +937,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -948,7 +948,7 @@ public class ConversationJP implements Conversation {
                   tohokaiwa.effectNEXT = 1;
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 2) {
+            } else if (speechId == 2) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -958,7 +958,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 3) {
+            } else if (speechId == 3) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 1);
@@ -968,7 +968,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 4) {
+            } else if (speechId == 4) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -978,7 +978,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 5) {
+            } else if (speechId == 5) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -988,7 +988,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 6) {
+            } else if (speechId == 6) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 1);
@@ -998,7 +998,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 7) {
+            } else if (speechId == 7) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -1008,7 +1008,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 8) {
+            } else if (speechId == 8) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 1);
@@ -1018,7 +1018,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "するわ。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 9 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 9 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 1);
@@ -1028,7 +1028,7 @@ public class ConversationJP implements Conversation {
                tohokaiwa.effectflag = 1;
             }
          } else if (tohoSINMACanvas.peoplebomkind % 2 == 1) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1038,7 +1038,7 @@ public class ConversationJP implements Conversation {
                   tohokaiwa.effectNEXT = 1;
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 1);
@@ -1047,7 +1047,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 2) {
+            } else if (speechId == 2) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1057,7 +1057,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 3) {
+            } else if (speechId == 3) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1067,7 +1067,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 4) {
+            } else if (speechId == 4) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 1);
@@ -1077,7 +1077,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "と思っているわ。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 5) {
+            } else if (speechId == 5) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1087,7 +1087,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "要するに・・・";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 6) {
+            } else if (speechId == 6) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1097,7 +1097,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 7) {
+            } else if (speechId == 7) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1107,7 +1107,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 8) {
+            } else if (speechId == 8) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1117,7 +1117,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 9) {
+            } else if (speechId == 9) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1127,7 +1127,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "するまでは、な。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 10 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 10 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 1);
@@ -1137,9 +1137,9 @@ public class ConversationJP implements Conversation {
                tohokaiwa.effectflag = 1;
             }
          }
-      } else if (var0 == 7) {
+      } else if (dialogueId == 7) {
          if (tohoSINMACanvas.peoplebomkind % 2 == 0) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -1149,7 +1149,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -1160,7 +1160,7 @@ public class ConversationJP implements Conversation {
                   tohokaiwa.effectNEXT = 1;
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 2) {
+            } else if (speechId == 2) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 1);
@@ -1170,7 +1170,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 3) {
+            } else if (speechId == 3) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -1180,7 +1180,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 4) {
+            } else if (speechId == 4) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 1);
@@ -1190,7 +1190,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 5 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 5 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 5, 1, 1);
@@ -1200,7 +1200,7 @@ public class ConversationJP implements Conversation {
                tohokaiwa.effectflag = 1;
             }
          } else if (tohoSINMACanvas.peoplebomkind % 2 == 1) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1210,7 +1210,7 @@ public class ConversationJP implements Conversation {
                   tohokaiwa.effectNEXT = 1;
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1220,7 +1220,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "いるのよ？";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 2) {
+            } else if (speechId == 2) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1230,7 +1230,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "わくわく。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 3) {
+            } else if (speechId == 3) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1240,7 +1240,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "伝言頼まれてくれる？";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 4) {
+            } else if (speechId == 4) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 1);
@@ -1250,7 +1250,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 5) {
+            } else if (speechId == 5) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1260,7 +1260,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "管理者！！";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 6) {
+            } else if (speechId == 6) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1270,7 +1270,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "って伝えといて。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 7) {
+            } else if (speechId == 7) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1280,7 +1280,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "行かざるを得ないぜ。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 8) {
+            } else if (speechId == 8) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 1);
@@ -1290,7 +1290,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 9) {
+            } else if (speechId == 9) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1300,7 +1300,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "呼んでくれ。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 10 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 10 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 5, 1, 1);
@@ -1310,9 +1310,9 @@ public class ConversationJP implements Conversation {
                tohokaiwa.effectflag = 1;
             }
          }
-      } else if (var0 == 8) {
+      } else if (dialogueId == 8) {
          if (tohoSINMACanvas.peoplebomkind % 2 == 0) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -1321,7 +1321,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -1332,7 +1332,7 @@ public class ConversationJP implements Conversation {
                   tohokaiwa.effectNEXT = 1;
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 2) {
+            } else if (speechId == 2) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -1342,7 +1342,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 3) {
+            } else if (speechId == 3) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -1352,7 +1352,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "かしら？";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 4) {
+            } else if (speechId == 4) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -1362,7 +1362,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "そこをどいてくれるかしら？。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 5) {
+            } else if (speechId == 5) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -1372,7 +1372,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 6) {
+            } else if (speechId == 6) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 1);
@@ -1382,7 +1382,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 7) {
+            } else if (speechId == 7) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -1392,7 +1392,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 8 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 8 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 1);
@@ -1402,7 +1402,7 @@ public class ConversationJP implements Conversation {
                tohokaiwa.effectflag = 1;
             }
          } else if (tohoSINMACanvas.peoplebomkind % 2 == 1) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1412,7 +1412,7 @@ public class ConversationJP implements Conversation {
                   tohokaiwa.effectNEXT = 1;
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1422,7 +1422,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 2) {
+            } else if (speechId == 2) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1432,7 +1432,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "あれか、里帰りか？";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 3) {
+            } else if (speechId == 3) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1442,7 +1442,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 4) {
+            } else if (speechId == 4) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 1);
@@ -1452,7 +1452,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 5) {
+            } else if (speechId == 5) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1462,7 +1462,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 6) {
+            } else if (speechId == 6) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1472,7 +1472,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 7) {
+            } else if (speechId == 7) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1482,7 +1482,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 8) {
+            } else if (speechId == 8) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1492,7 +1492,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 9) {
+            } else if (speechId == 9) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1502,7 +1502,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "もらうわ！";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 10 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 10 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 1);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 0);
@@ -1512,9 +1512,9 @@ public class ConversationJP implements Conversation {
                tohokaiwa.effectflag = 1;
             }
          }
-      } else if (var0 == 9) {
+      } else if (dialogueId == 9) {
          if (tohoSINMACanvas.peoplebomkind % 2 == 0) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -1524,7 +1524,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "でした…";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 1);
@@ -1535,7 +1535,7 @@ public class ConversationJP implements Conversation {
                   tohokaiwa.effectNEXT = 1;
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 2 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 2 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 5, 1, 0);
@@ -1545,7 +1545,7 @@ public class ConversationJP implements Conversation {
                tohokaiwa.effectflag = 1;
             }
          } else if (tohoSINMACanvas.peoplebomkind % 2 == 1) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1555,7 +1555,7 @@ public class ConversationJP implements Conversation {
                   tohokaiwa.effectNEXT = 1;
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 1);
@@ -1565,7 +1565,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 2) {
+            } else if (speechId == 2) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1575,7 +1575,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "思っていたのだけど…。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 3) {
+            } else if (speechId == 3) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1585,7 +1585,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "ツケは帳消しだな。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 4) {
+            } else if (speechId == 4) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1595,7 +1595,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "けど、ツケは消えないわよ？";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 5) {
+            } else if (speechId == 5) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1605,7 +1605,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 6 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 6 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 5, 1, 1);
@@ -1615,9 +1615,9 @@ public class ConversationJP implements Conversation {
                tohokaiwa.effectflag = 1;
             }
          }
-      } else if (var0 == 10) {
+      } else if (dialogueId == 10) {
          if (tohoSINMACanvas.peoplebomkind % 2 == 0) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -1626,7 +1626,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -1636,7 +1636,7 @@ public class ConversationJP implements Conversation {
                   tohokaiwa.effectNEXT = 1;
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 2) {
+            } else if (speechId == 2) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -1646,7 +1646,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "賢者ですか。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 3) {
+            } else if (speechId == 3) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 1);
@@ -1656,7 +1656,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 4) {
+            } else if (speechId == 4) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -1666,7 +1666,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 5) {
+            } else if (speechId == 5) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -1676,7 +1676,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 6) {
+            } else if (speechId == 6) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -1686,7 +1686,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 7) {
+            } else if (speechId == 7) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -1696,7 +1696,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 8) {
+            } else if (speechId == 8) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 1);
@@ -1706,7 +1706,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 9) {
+            } else if (speechId == 9) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -1716,7 +1716,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "自己完結した世界を";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 10) {
+            } else if (speechId == 10) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -1726,7 +1726,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "までは。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 11) {
+            } else if (speechId == 11) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -1736,7 +1736,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "変化を拒むなら、幻想郷の";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 12) {
+            } else if (speechId == 12) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -1746,7 +1746,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 13) {
+            } else if (speechId == 13) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 1);
@@ -1756,7 +1756,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 14) {
+            } else if (speechId == 14) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -1766,7 +1766,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "もはや拒む理由は無い筈です。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 15) {
+            } else if (speechId == 15) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -1776,7 +1776,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 16) {
+            } else if (speechId == 16) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
@@ -1786,7 +1786,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "面倒なのよ！";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 17 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 17 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 1);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 0);
@@ -1796,7 +1796,7 @@ public class ConversationJP implements Conversation {
                tohokaiwa.effectflag = 1;
             }
          } else if (tohoSINMACanvas.peoplebomkind % 2 == 1) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1805,7 +1805,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1816,7 +1816,7 @@ public class ConversationJP implements Conversation {
                   tohokaiwa.effectflag = 1;
                   tohokaiwa.effectNEXT = 1;
                }
-            } else if (var1 == 2) {
+            } else if (speechId == 2) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1826,7 +1826,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 3) {
+            } else if (speechId == 3) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 1);
@@ -1836,7 +1836,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 4) {
+            } else if (speechId == 4) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1846,7 +1846,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "えっへん。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 5) {
+            } else if (speechId == 5) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1856,7 +1856,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "思ってたぜ。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 6) {
+            } else if (speechId == 6) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1866,7 +1866,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 7) {
+            } else if (speechId == 7) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 1);
@@ -1876,7 +1876,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 8) {
+            } else if (speechId == 8) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1886,7 +1886,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 9) {
+            } else if (speechId == 9) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1896,7 +1896,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 10) {
+            } else if (speechId == 10) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1906,7 +1906,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "伝言なんだが、";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 11) {
+            } else if (speechId == 11) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1916,7 +1916,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "あと、そこの白黒魔女は";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 12) {
+            } else if (speechId == 12) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1926,7 +1926,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 13) {
+            } else if (speechId == 13) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 1);
@@ -1936,7 +1936,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 14) {
+            } else if (speechId == 14) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
@@ -1946,7 +1946,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 15) {
+            } else if (speechId == 15) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 1);
@@ -1956,7 +1956,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 16 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 16 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 1);
@@ -1966,9 +1966,9 @@ public class ConversationJP implements Conversation {
                tohokaiwa.effectflag = 1;
             }
          }
-      } else if (var0 == 11) {
+      } else if (dialogueId == 11) {
          if (tohoSINMACanvas.peoplebomkind % 2 == 0) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.kaiwa1 = "一体私の神社に何が起こってる";
@@ -1976,7 +1976,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.kaiwa1 = "ふふふ…久しぶりだねぇ？霊夢";
@@ -1984,7 +1984,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 2) {
+            } else if (speechId == 2) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 1);
@@ -1994,7 +1994,7 @@ public class ConversationJP implements Conversation {
                   tohokaiwa.effectNEXT = 1;
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 3) {
+            } else if (speechId == 3) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 0);
@@ -2003,7 +2003,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 4) {
+            } else if (speechId == 4) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 0);
@@ -2012,7 +2012,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 5) {
+            } else if (speechId == 5) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 0);
@@ -2021,7 +2021,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 6) {
+            } else if (speechId == 6) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 1);
@@ -2030,7 +2030,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "だと信仰集まらないし、";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 7) {
+            } else if (speechId == 7) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 1);
@@ -2039,7 +2039,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 8) {
+            } else if (speechId == 8) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 0);
@@ -2048,7 +2048,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "来なくなるのよ！";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 9) {
+            } else if (speechId == 9) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 1);
@@ -2057,7 +2057,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 10) {
+            } else if (speechId == 10) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 0);
@@ -2066,7 +2066,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 11) {
+            } else if (speechId == 11) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 1);
@@ -2075,7 +2075,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "ようだねぇ？";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 12) {
+            } else if (speechId == 12) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 0);
@@ -2084,7 +2084,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 13 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 13 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 1);
                tohoSINMACanvas.kaiwa1 = "いや、まぁ、その。";
@@ -2093,7 +2093,7 @@ public class ConversationJP implements Conversation {
                tohokaiwa.effectflag = 1;
             }
          } else if (tohoSINMACanvas.peoplebomkind % 2 == 1) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.kaiwa1 = "ん？なんか神社がいつもと違うぜ";
@@ -2101,7 +2101,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "霊夢も起きてる筈なんだが…。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.kaiwa1 = "ほう、しばらく見ないうちに";
@@ -2109,7 +2109,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "ないか。";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 2) {
+            } else if (speechId == 2) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.kaiwa1 = "そ、その声は！";
@@ -2117,7 +2117,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 3) {
+            } else if (speechId == 3) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 1);
@@ -2127,7 +2127,7 @@ public class ConversationJP implements Conversation {
                   tohokaiwa.effectflag = 1;
                   tohokaiwa.effectNEXT = 1;
                }
-            } else if (var1 == 4) {
+            } else if (speechId == 4) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 0);
@@ -2136,7 +2136,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 5) {
+            } else if (speechId == 5) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 1);
@@ -2145,7 +2145,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 6) {
+            } else if (speechId == 6) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 0);
@@ -2154,7 +2154,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 7) {
+            } else if (speechId == 7) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 1);
@@ -2163,7 +2163,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 8) {
+            } else if (speechId == 8) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 0);
@@ -2172,7 +2172,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 9) {
+            } else if (speechId == 9) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 1);
@@ -2181,7 +2181,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 10) {
+            } else if (speechId == 10) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 0);
@@ -2190,7 +2190,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 11 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 11 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 1);
                tohoSINMACanvas.kaiwa1 = "さあ、始めようではないか！";
@@ -2199,9 +2199,9 @@ public class ConversationJP implements Conversation {
                tohokaiwa.effectflag = 1;
             }
          }
-      } else if (var0 == 12) {
+      } else if (dialogueId == 12) {
          if (tohoSINMACanvas.peoplebomkind % 2 == 0) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 1);
@@ -2210,7 +2210,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 0);
@@ -2220,7 +2220,7 @@ public class ConversationJP implements Conversation {
                   tohokaiwa.effectNEXT = 1;
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 2) {
+            } else if (speechId == 2) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 1);
@@ -2229,7 +2229,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 3 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 3 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 0);
                tohoSINMACanvas.kaiwa1 = "もう来ないでね〜。";
@@ -2238,7 +2238,7 @@ public class ConversationJP implements Conversation {
                tohokaiwa.effectflag = 1;
             }
          } else if (tohoSINMACanvas.peoplebomkind % 2 == 1) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 0);
@@ -2248,7 +2248,7 @@ public class ConversationJP implements Conversation {
                   tohokaiwa.effectNEXT = 1;
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 1);
@@ -2257,7 +2257,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 2) {
+            } else if (speechId == 2) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 0);
@@ -2266,7 +2266,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 3) {
+            } else if (speechId == 3) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 1);
@@ -2275,7 +2275,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 4 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 4 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 0);
                tohoSINMACanvas.kaiwa1 = "いつのまにやら";
@@ -2284,9 +2284,9 @@ public class ConversationJP implements Conversation {
                tohokaiwa.effectflag = 1;
             }
          }
-      } else if (var0 == 13) {
+      } else if (dialogueId == 13) {
          if (tohoSINMACanvas.peoplebomkind % 2 == 0) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 1);
@@ -2296,7 +2296,7 @@ public class ConversationJP implements Conversation {
                   tohokaiwa.effectflag = 1;
                   tohokaiwa.effectNEXT = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 0);
@@ -2305,7 +2305,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 2) {
+            } else if (speechId == 2) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 1);
@@ -2314,7 +2314,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 3) {
+            } else if (speechId == 3) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 0);
@@ -2323,7 +2323,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 4 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 4 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 1);
                tohoSINMACanvas.kaiwa1 = "…こ、怖くなんてないんだから！";
@@ -2332,7 +2332,7 @@ public class ConversationJP implements Conversation {
                tohokaiwa.effectflag = 1;
             }
          } else if (tohoSINMACanvas.peoplebomkind % 2 == 1) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 0);
@@ -2342,7 +2342,7 @@ public class ConversationJP implements Conversation {
                   tohokaiwa.effectNEXT = 1;
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 1);
@@ -2351,7 +2351,7 @@ public class ConversationJP implements Conversation {
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 2 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 2 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 1);
                tohoSINMACanvas.kaiwa1 = "という訳で…ついでにあなたも";
@@ -2363,213 +2363,213 @@ public class ConversationJP implements Conversation {
       }
    }
 
-   public void getedkaiwa(int var0, int var1) {
-      if (var0 == 0) {
+   public void getedkaiwa(int continues, int speechId) {
+      if (continues == 0) {
          if (tohoSINMACanvas.peoplebomkind % 2 == 0) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if  (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = "  それから・・・";
                   tohoSINMACanvas.kaiwa2 = "";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if  (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = "  紫  「ようするに、そういうことなの";
                   tohoSINMACanvas.kaiwa2 = "        よ。」";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 2) {
+            } else if (speechId == 2) {
                if  (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = " 霊夢 「ふぅん…幻想郷の立場ねぇ…。」";
                   tohoSINMACanvas.kaiwa2 = "        ";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 3) {
+            } else if (speechId == 3) {
                if  (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = "  紫  「幻想郷は閉じた世界。";
                   tohoSINMACanvas.kaiwa2 = "        もし、その根底が覆るほど多くの";
                   tohoSINMACanvas.kaiwa3 = "        人が流れ込んできたとしたら？」";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 4) {
+            } else if (speechId == 4) {
                if  (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = "  紫  「･･･話しすぎたかしらね？";
                   tohoSINMACanvas.kaiwa2 = "        まぁ、それじゃぁ私は帰るわね。」";
                   tohoSINMACanvas.kaiwa3 = "        ";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 5) {
+            } else if (speechId == 5) {
                if  (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = "  しゅん･･･";
                   tohoSINMACanvas.kaiwa2 = "";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 6) {
+            } else if (speechId == 6) {
                if  (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = " 霊夢 「はぁ、疲れたわね。";
                   tohoSINMACanvas.kaiwa2 = "        早く神社に帰って寝たいわ〜。」";
                   tohoSINMACanvas.kaiwa3 = "        ";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 7) {
+            } else if (speechId == 7) {
                if  (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = " 霊夢 「ん…？ただならぬ気配を感じる";
                   tohoSINMACanvas.kaiwa2 = "        わね。」";
                   tohoSINMACanvas.kaiwa3 = "        ";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 8) {
+            } else if (speechId == 8) {
                if  (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = " 霊夢 「場所は…私の神社じゃないの！」";
                   tohoSINMACanvas.kaiwa2 = "        ";
                   tohoSINMACanvas.kaiwa3 = "        ";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 9) {
+            } else if (speechId == 9) {
                if  (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = "  彼女の苦難はまだ終わらない";
                   tohoSINMACanvas.kaiwa2 = "  To Be Continued …";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 10 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 10 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.kaiwa1 = "  【ＧＯＯＤ  ＥＮＤ１】";
                tohoSINMACanvas.kaiwa2 = "流石だね！しかし挑戦はまだ続きます…";
                tohoSINMACanvas.kaiwa3 = "";
                tohokaiwa.effectflag = 1;
             }
          } else if (tohoSINMACanvas.peoplebomkind % 2 == 1) {
-            if (var1 == 0) {
+            if (speechId == 0) {
                if  (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = " 神綺 「ふぅん、なかなかやるじゃない。」";
                   tohoSINMACanvas.kaiwa2 = "        ";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 1) {
+            } else if (speechId == 1) {
                if  (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = "魔理沙「その姿でいわれても威厳のかけら";
                   tohoSINMACanvas.kaiwa2 = "        もないぜ。」";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 2) {
+            } else if (speechId == 2) {
                if  (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = " 神綺 「ぐぅ。仕方ないわね。」";
                   tohoSINMACanvas.kaiwa2 = "        ";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 3) {
+            } else if (speechId == 3) {
                if  (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = "パチェ「で、結界の話なのだけど…。」";
                   tohoSINMACanvas.kaiwa2 = "       ";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 4) {
+            } else if (speechId == 4) {
                if  (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = " 神綺 「申し訳ないけど、あの結界を私　";
                   tohoSINMACanvas.kaiwa2 = "        たち魔界人が張ることはできない";
                   tohoSINMACanvas.kaiwa3 = "        から、」";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 5) {
+            } else if (speechId == 5) {
                if  (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = " 神綺 「巫女本人がいないとどうしようも";
                   tohoSINMACanvas.kaiwa2 = "        ないのよ。」";
                   tohoSINMACanvas.kaiwa3 = "        ";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 6) {
+            } else if (speechId == 6) {
                if  (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = "パチェ「では、せめて行き来を自重するよ";
                   tohoSINMACanvas.kaiwa2 = "        うに言ってはもらえないでしょう";
                   tohoSINMACanvas.kaiwa3 = "         か？」";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 7) {
+            } else if (speechId == 7) {
                if  (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = " 神綺 「そうね、それなら問題ないわ。」";
                   tohoSINMACanvas.kaiwa2 = "        ";
                   tohoSINMACanvas.kaiwa3 = "        ";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 8) {
+            } else if (speechId == 8) {
                if  (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = "魔理沙「よし、これにて";
                   tohoSINMACanvas.kaiwa2 = "        ミッションコンプリートだな！」";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 9) {
+            } else if (speechId == 9) {
                if  (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = "  ・・・。";
                   tohoSINMACanvas.kaiwa2 = "        ";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 10) {
+            } else if (speechId == 10) {
                if  (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = "パチェ「それじゃ、私はここで。」";
                   tohoSINMACanvas.kaiwa2 = "        ";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 11) {
+            } else if (speechId == 11) {
                if  (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = "魔理沙「わざわざ付き合ってくれて";
                   tohoSINMACanvas.kaiwa2 = "        感謝だぜ。」";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 12) {
+            } else if (speechId == 12) {
                if  (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = "魔理沙「そうだな、こんどプレゼントでも";
                   tohoSINMACanvas.kaiwa2 = "        やるよ。」";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 13) {
+            } else if (speechId == 13) {
                if  (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = "パチェ「あ、え、いえ、別にそんなに";
                   tohoSINMACanvas.kaiwa2 = "        大したことじゃないしかまわない";
                   tohoSINMACanvas.kaiwa3 = "        わよ。」";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 14) {
+            } else if (speechId == 14) {
                if  (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = "パチェ「きにしないでというかべつに…。」";
                   tohoSINMACanvas.kaiwa2 = "        ";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 15) {
+            } else if (speechId == 15) {
                if  (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = "魔理沙「…何をテンパってるんだ？";
                   tohoSINMACanvas.kaiwa2 = "        そうだな〜新開発、体がメタル化";
                   tohoSINMACanvas.kaiwa3 = "        するきのこでも…」";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 16) {
+            } else if (speechId == 16) {
                if  (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = "パチェ「いらないわよ！」";
                   tohoSINMACanvas.kaiwa2 = "        ";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 17) {
+            } else if (speechId == 17) {
                if  (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.kaiwa1 = "  そんなこんなでパチュリーと別れ、";
                   tohoSINMACanvas.kaiwa2 = "  一人神社へと向かう魔理沙であった";
                   tohoSINMACanvas.kaiwa3 = "  のだが…？";
                   tohokaiwa.effectflag = 1;
                }
-            } else if (var1 == 18 && tohokaiwa.effectflag == 0) {
+            } else if (speechId == 18 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.kaiwa1 = "  【ＨＡＰＰＹ  ＥＮＤ】";
                tohoSINMACanvas.kaiwa2 = "流石だね！神社で魔理沙の見たものとは…？";
                tohoSINMACanvas.kaiwa3 = "";
@@ -2577,112 +2577,112 @@ public class ConversationJP implements Conversation {
             }
          }
       } else if (tohoSINMACanvas.peoplebomkind % 2 == 0) {
-         if (var1 == 0) {
+         if (speechId == 0) {
             if  (tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.kaiwa1 = "  それから・・・";
                tohoSINMACanvas.kaiwa2 = "";
                tohoSINMACanvas.kaiwa3 = "";
                tohokaiwa.effectflag = 1;
             }
-         } else if (var1 == 1) {
+         } else if (speechId == 1) {
             if  (tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.kaiwa1 = " 霊夢 「魔界からどんどん人が来ている";
                tohoSINMACanvas.kaiwa2 = "        わ…。」";
                tohoSINMACanvas.kaiwa3 = "";
                tohokaiwa.effectflag = 1;
             }
-         } else if (var1 == 2) {
+         } else if (speechId == 2) {
             if  (tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.kaiwa1 = " 霊夢 「しかもやりたい放題じゃない！";
                tohoSINMACanvas.kaiwa2 = "        あの魔界神はどんな教育をしてる";
                tohoSINMACanvas.kaiwa3 = "        のよ！」";
                tohokaiwa.effectflag = 1;
             }
-         } else if (var1 == 3) {
+         } else if (speechId == 3) {
             if  (tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.kaiwa1 = "  紫  「それは、貴方の力不足が原因じゃ";
                tohoSINMACanvas.kaiwa2 = "        なくて？」";
                tohoSINMACanvas.kaiwa3 = "        ";
                tohokaiwa.effectflag = 1;
             }
-         } else if (var1 == 4) {
+         } else if (speechId == 4) {
             if  (tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.kaiwa1 = " 霊夢 「ぐっ。だ、だから今修行してる";
                tohoSINMACanvas.kaiwa2 = "        じゃない！」";
                tohoSINMACanvas.kaiwa3 = "        ";
                tohokaiwa.effectflag = 1;
             }
-         } else if (var1 == 5) {
+         } else if (speechId == 5) {
             if  (tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.kaiwa1 = "  紫  「はいはい、手遅れにならないよう";
                tohoSINMACanvas.kaiwa2 = "        頑張るのよ。」";
                tohoSINMACanvas.kaiwa3 = "        ";
                tohokaiwa.effectflag = 1;
             }
-         } else if (var1 == 6) {
+         } else if (speechId == 6) {
             if  (tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.kaiwa1 = " 霊夢 「あんたは何でそう他人事なのよ…」";
                tohoSINMACanvas.kaiwa2 = "        ";
                tohoSINMACanvas.kaiwa3 = "        ";
                tohokaiwa.effectflag = 1;
             }
-         } else if (var1 == 7) {
+         } else if (speechId == 7) {
             if  (tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.kaiwa1 = "  霊夢の修行の日々が始まったので";
                tohoSINMACanvas.kaiwa2 = "  あった…。";
                tohoSINMACanvas.kaiwa3 = "";
                tohokaiwa.effectflag = 1;
             }
-         } else if (var1 == 8 && tohokaiwa.effectflag == 0) {
+         } else if (speechId == 8 && tohokaiwa.effectflag == 0) {
             tohoSINMACanvas.kaiwa1 = "  【ＢＡＤ  ＥＮＤ】";
             tohoSINMACanvas.kaiwa2 = "  ノーコンで魔界神をやっつけよう！";
             tohoSINMACanvas.kaiwa3 = "";
             tohokaiwa.effectflag = 1;
          }
       } else if (tohoSINMACanvas.peoplebomkind % 2 == 1) {
-         if (var1 == 0) {
+         if (speechId == 0) {
             if  (tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.kaiwa1 = "魔理沙「まずい、ズラかるぜ！」";
                tohoSINMACanvas.kaiwa2 = "        ";
                tohoSINMACanvas.kaiwa3 = "";
                tohokaiwa.effectflag = 1;
             }
-         } else if (var1 == 1) {
+         } else if (speechId == 1) {
             if  (tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.kaiwa1 = "パチェ「私は悪くないのに〜！」";
                tohoSINMACanvas.kaiwa2 = "        ";
                tohoSINMACanvas.kaiwa3 = "";
                tohokaiwa.effectflag = 1;
             }
-         } else if (var1 == 2) {
+         } else if (speechId == 2) {
             if  (tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.kaiwa1 = " 神綺 「悪は去った。私の大勝利ね！」";
                tohoSINMACanvas.kaiwa2 = "        ";
                tohoSINMACanvas.kaiwa3 = "";
                tohokaiwa.effectflag = 1;
             }
-         } else if (var1 == 3) {
+         } else if (speechId == 3) {
             if  (tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.kaiwa1 = " 神綺 「…あれ、なんか忘れてるような」";
                tohoSINMACanvas.kaiwa2 = "        …まぁ、いいわよね。」";
                tohoSINMACanvas.kaiwa3 = "";
                tohokaiwa.effectflag = 1;
             }
-         } else if (var1 == 4) {
+         } else if (speechId == 4) {
             if  (tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.kaiwa1 = "  見事盗賊を撃退し、";
                tohoSINMACanvas.kaiwa2 = "  魔界の平和は守られた。      ";
                tohoSINMACanvas.kaiwa3 = "        ";
                tohokaiwa.effectflag = 1;
             }
-         } else if (var1 == 5) {
+         } else if (speechId == 5) {
             if  (tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.kaiwa2 = "  ありがとう、僕らのたくましい魔界神！";
                tohoSINMACanvas.kaiwa1 = "        ";
                tohoSINMACanvas.kaiwa3 = "        ";
                tohokaiwa.effectflag = 1;
             }
-         } else if (var1 == 6 && tohokaiwa.effectflag == 0) {
+         } else if (speechId == 6 && tohokaiwa.effectflag == 0) {
             tohoSINMACanvas.kaiwa1 = "  【ＭＡＫＡＩ  ＥＮＤ】";
             tohoSINMACanvas.kaiwa2 = "  ざんねん！！  まりさの  ぼうけんは";
             tohoSINMACanvas.kaiwa3 = "  ここでおわってしまった！";
