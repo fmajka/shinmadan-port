@@ -9,6 +9,11 @@ public class tohoSINMA extends IApplication {
 
    public tohoSINMA() {
       canvas = new tohoSINMACanvas();
+      // Unlocks practice and extra stages
+      for(int i = 0; i < 7; i++) {
+         canvas.stageopen[i] = 1;
+         canvas.stageopenH[i] = 1;
+      }
    }
 
    public void start() {
