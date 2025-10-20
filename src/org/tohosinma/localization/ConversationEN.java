@@ -1579,7 +1579,8 @@ public class ConversationEN implements Conversation {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
-                  tohoSINMACanvas.kaiwa1 = "待ちなさい！";
+                  // 待ちなさい！
+                  tohoSINMACanvas.kaiwa1 = "Wait!";
                   tohoSINMACanvas.kaiwa2 = "";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
@@ -1589,7 +1590,8 @@ public class ConversationEN implements Conversation {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 1);
-                  tohoSINMACanvas.kaiwa1 = "ここから先は行かせないわ！";
+                  // ここから先は行かせないわ！
+                  tohoSINMACanvas.kaiwa1 = "You're not going any further!";
                   tohoSINMACanvas.kaiwa2 = "";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectNEXT = 1;
@@ -1600,8 +1602,10 @@ public class ConversationEN implements Conversation {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 0);
-                  tohoSINMACanvas.kaiwa1 = "あら、アリスじゃない？";
-                  tohoSINMACanvas.kaiwa2 = "何であなたがここに…。";
+                  // あら、アリスじゃない？
+                  tohoSINMACanvas.kaiwa1 = "Oh, isn't that Alice?";
+                  // 何であなたがここに…。
+                  tohoSINMACanvas.kaiwa2 = "What are you doing here?";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
@@ -1610,9 +1614,12 @@ public class ConversationEN implements Conversation {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 1);
-                  tohoSINMACanvas.kaiwa1 = "私は魔界人よ、ここに";
-                  tohoSINMACanvas.kaiwa2 = "いることがそんなに不自然";
-                  tohoSINMACanvas.kaiwa3 = "かしら？";
+                  // 私は魔界人よ、ここに
+                  tohoSINMACanvas.kaiwa1 = "I'm from the demon world, you know.";
+                  // いることがそんなに不自然
+                  tohoSINMACanvas.kaiwa2 = "Is it really that strange for me";
+                  // かしら？
+                  tohoSINMACanvas.kaiwa3 = "to be here?";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 4) {
@@ -1620,9 +1627,12 @@ public class ConversationEN implements Conversation {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 0);
-                  tohoSINMACanvas.kaiwa1 = "アリス、私たちはこの先の神殿の";
-                  tohoSINMACanvas.kaiwa2 = "主に用があるの。おとなしく";
-                  tohoSINMACanvas.kaiwa3 = "そこをどいてくれるかしら？。";
+                  // アリス、私たちはこの先の神殿の
+                  tohoSINMACanvas.kaiwa1 = "Alice, we have business";
+                  // 主に用があるの。おとなしく
+                  tohoSINMACanvas.kaiwa2 = "with the Lord of the Temple ahead.";
+                  // そこをどいてくれるかしら？。
+                  tohoSINMACanvas.kaiwa3 = "Could you plese step aside?"; // ?
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 5) {
@@ -1630,7 +1640,8 @@ public class ConversationEN implements Conversation {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 1);
-                  tohoSINMACanvas.kaiwa1 = "私が引くと思って？。";
+                  // 私が引くと思って？。
+                  tohoSINMACanvas.kaiwa1 = "You thought I'd back down?";
                   tohoSINMACanvas.kaiwa2 = "";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
@@ -1640,8 +1651,10 @@ public class ConversationEN implements Conversation {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 0);
-                  tohoSINMACanvas.kaiwa1 = "どうやら素直に通して。";
-                  tohoSINMACanvas.kaiwa2 = "くれそうにないようね…。";
+                  // どうやら素直に通して。
+                  tohoSINMACanvas.kaiwa1 = "And I hoped she'd let us pass.";
+                  // くれそうにないようね…。
+                  tohoSINMACanvas.kaiwa2 = "Looks like it's not going to happen..."; // ???
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
@@ -1650,8 +1663,10 @@ public class ConversationEN implements Conversation {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 0);
-                  tohoSINMACanvas.kaiwa1 = "それなら、強引にでも";
-                  tohoSINMACanvas.kaiwa2 = "行かせてもらうわ！";
+                  // それなら、強引にでも
+                  tohoSINMACanvas.kaiwa1 = "Then I'll just have to force";
+                  // 行かせてもらうわ！
+                  tohoSINMACanvas.kaiwa2 = "my way through!";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
@@ -1659,7 +1674,8 @@ public class ConversationEN implements Conversation {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 7, 1, 1);
-               tohoSINMACanvas.kaiwa1 = "させない！";
+               // させない！
+               tohoSINMACanvas.kaiwa1 = "I won't allow it!";
                tohoSINMACanvas.kaiwa2 = "";
                tohoSINMACanvas.kaiwa3 = "";
                tohokaiwa.effectflag = 1;
@@ -1669,7 +1685,7 @@ public class ConversationEN implements Conversation {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
-                  tohoSINMACanvas.kaiwa1 = "ちょっと！";
+                  tohoSINMACanvas.kaiwa1 = "Hey!";
                   tohoSINMACanvas.kaiwa2 = "";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectNEXT = 1;
@@ -1680,8 +1696,10 @@ public class ConversationEN implements Conversation {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 1);
-                  tohoSINMACanvas.kaiwa1 = "なんで魔理沙がここにいるのよ？";
-                  tohoSINMACanvas.kaiwa2 = "それにパチュリーまで…。";
+                  // なんで魔理沙がここにいるのよ？
+                  tohoSINMACanvas.kaiwa1 = "Why the heck is Marisa here?";
+                  // それにパチュリーまで…。
+                  tohoSINMACanvas.kaiwa2 = "And even Patchouli...";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
@@ -1690,9 +1708,12 @@ public class ConversationEN implements Conversation {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 0);
-                  tohoSINMACanvas.kaiwa1 = "そんなアリスはなんでここ";
-                  tohoSINMACanvas.kaiwa2 = "にいるんだ？";
-                  tohoSINMACanvas.kaiwa3 = "あれか、里帰りか？";
+                  // そんなアリスはなんでここ
+                  tohoSINMACanvas.kaiwa1 = "Why the heck is Alice here?";
+                  // にいるんだ？
+                  tohoSINMACanvas.kaiwa2 = "Is she visiting her hometown?";
+                  // あれか、里帰りか？
+                  tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 3) {
@@ -1700,8 +1721,10 @@ public class ConversationEN implements Conversation {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 1);
-                  tohoSINMACanvas.kaiwa1 = "私はここで侵入者に備えて。";
-                  tohoSINMACanvas.kaiwa2 = "いるのよ";
+                  // 私はここで侵入者に備えて。
+                  tohoSINMACanvas.kaiwa1 = "I stand guard here in case";
+                  // いるのよ
+                  tohoSINMACanvas.kaiwa2 = "of intruders";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
@@ -1710,8 +1733,10 @@ public class ConversationEN implements Conversation {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 0);
-                  tohoSINMACanvas.kaiwa1 = "魔理沙、完全に行動が";
-                  tohoSINMACanvas.kaiwa2 = "読まれているわよ。";
+                  // 魔理沙、完全に行動が
+                  tohoSINMACanvas.kaiwa1 = "Marisa, you're so predictable.";
+                  // 読まれているわよ。
+                  tohoSINMACanvas.kaiwa2 = "";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
@@ -1720,8 +1745,9 @@ public class ConversationEN implements Conversation {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 0);
-                  tohoSINMACanvas.kaiwa1 = "何の話か分からないぜ？";
-                  tohoSINMACanvas.kaiwa2 = "";
+                  // 何の話か分からないぜ？
+                  tohoSINMACanvas.kaiwa1 = "What the heck are you";
+                  tohoSINMACanvas.kaiwa2 = "talking about?";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
@@ -1730,8 +1756,9 @@ public class ConversationEN implements Conversation {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 1);
-                  tohoSINMACanvas.kaiwa1 = "";
-                  tohoSINMACanvas.kaiwa2 = "しらばっくれても無駄よっ！";
+                  tohoSINMACanvas.kaiwa1 = "Don't play innocent.";
+                  // しらばっくれても無駄よっ！
+                  tohoSINMACanvas.kaiwa2 = "It's useless!"; // There's no point in denying it!
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
@@ -1740,8 +1767,10 @@ public class ConversationEN implements Conversation {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 1);
-                  tohoSINMACanvas.kaiwa1 = "…とは言っても、、貴方を。";
-                  tohoSINMACanvas.kaiwa2 = "待ち構えていたのではないけど。";
+                  // …とは言っても、、貴方を。
+                  tohoSINMACanvas.kaiwa1 = "...That said, I wasn't";
+                  // 待ち構えていたのではないけど。
+                  tohoSINMACanvas.kaiwa2 = "waiting for you.";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
@@ -1750,8 +1779,10 @@ public class ConversationEN implements Conversation {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 0);
-                  tohoSINMACanvas.kaiwa1 = "そうか、なら私は先に";
-                  tohoSINMACanvas.kaiwa2 = "行かせてもらうぜ。";
+                  // そうか、なら私は先に
+                  tohoSINMACanvas.kaiwa1 = "I see. Well then,";
+                  // 行かせてもらうぜ。
+                  tohoSINMACanvas.kaiwa2 = "I'll be heading out.";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
@@ -1760,18 +1791,24 @@ public class ConversationEN implements Conversation {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 1);
-                  tohoSINMACanvas.kaiwa1 = "いやいや、ここで会ったが";
-                  tohoSINMACanvas.kaiwa2 = "百年目。日ごろのツケを払って";
-                  tohoSINMACanvas.kaiwa3 = "もらうわ！";
+                  // いやいや、ここで会ったが
+                  tohoSINMACanvas.kaiwa1 = "But well, it's great coincidence";
+                  // 百年目。日ごろのツケを払って
+                  tohoSINMACanvas.kaiwa2 = "to run into you here. I'll make you pay";
+                  // もらうわ！
+                  tohoSINMACanvas.kaiwa3 = "for what you've done!"; // ?
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 10 && tohokaiwa.effectflag == 0) {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 1);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 8, 1, 0);
-               tohoSINMACanvas.kaiwa1 = "どちらかというと魔理沙より";
-               tohoSINMACanvas.kaiwa2 = "アリスに味方したい気分なん";
-               tohoSINMACanvas.kaiwa3 = "だけどなぁ…";
+               // どちらかというと魔理沙より
+               tohoSINMACanvas.kaiwa1 = "I feel like I'd rather side";
+               // アリスに味方したい気分なん
+               tohoSINMACanvas.kaiwa2 = "with Alice than Marisa,";
+               // だけどなぁ…
+               tohoSINMACanvas.kaiwa3 = "if I'm being honest...";
                tohokaiwa.effectflag = 1;
             }
          }
@@ -1782,9 +1819,12 @@ public class ConversationEN implements Conversation {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 5, 1, 1);
-                  tohoSINMACanvas.kaiwa1 = "すみません。";
-                  tohoSINMACanvas.kaiwa2 = "私じゃ止められません";
-                  tohoSINMACanvas.kaiwa3 = "でした…";
+                  // すみません。
+                  tohoSINMACanvas.kaiwa1 = "I'm sorry.";
+                  // 私じゃ止められません
+                  tohoSINMACanvas.kaiwa2 = "I couldn't stop them...";
+                  // でした…
+                  tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 1) {
@@ -1792,7 +1832,8 @@ public class ConversationEN implements Conversation {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 5, 1, 0);
-                  tohoSINMACanvas.kaiwa1 = "この先にいるのね？";
+                  // この先にいるのね？
+                  tohoSINMACanvas.kaiwa1 = "She's up ahead, right?"; // ???
                   tohoSINMACanvas.kaiwa2 = "";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectNEXT = 1;
@@ -1802,9 +1843,12 @@ public class ConversationEN implements Conversation {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 0, -1, 1);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 1, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 5, 1, 0);
-               tohoSINMACanvas.kaiwa1 = "昔と同じならね。";
-               tohoSINMACanvas.kaiwa2 = "まあ、アリスも待ち構えてたし、";
-               tohoSINMACanvas.kaiwa3 = "正解だと思うけど。";
+               // 昔と同じならね。
+               tohoSINMACanvas.kaiwa1 = "If it's the same as before, then yeah.";
+               // まあ、アリスも待ち構えてたし、
+               tohoSINMACanvas.kaiwa2 = "Well, Alice was waiting for me too,";
+               // 正解だと思うけど。
+               tohoSINMACanvas.kaiwa3 = "so I guess that's the right call."; // ?
                tohokaiwa.effectflag = 1;
             }
          } else if (tohoSINMACanvas.peoplebomkind % 2 == 1) {
@@ -1812,8 +1856,10 @@ public class ConversationEN implements Conversation {
                if (tohokaiwa.effectflag == 0) {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
-                  tohoSINMACanvas.kaiwa1 = "さて、この先には何があるのか";
-                  tohoSINMACanvas.kaiwa2 = "楽しみだな。";
+                  // さて、この先には何があるのか
+                  tohoSINMACanvas.kaiwa1 = "Well, I'm excited to see";
+                  // 楽しみだな。
+                  tohoSINMACanvas.kaiwa2 = "what lies ahead.";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectNEXT = 1;
                   tohokaiwa.effectflag = 1;
@@ -1823,8 +1869,10 @@ public class ConversationEN implements Conversation {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 5, 1, 0);
-                  tohoSINMACanvas.kaiwa1 = "そういえば貴方、誰を";
-                  tohoSINMACanvas.kaiwa2 = "待ち構えていたの？。";
+                  // そういえば貴方、誰を
+                  tohoSINMACanvas.kaiwa1 = "By the way, who were you ";
+                  // 待ち構えていたの？。
+                  tohoSINMACanvas.kaiwa2 = "waiting for?";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
@@ -1833,9 +1881,12 @@ public class ConversationEN implements Conversation {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 5, 1, 1);
-                  tohoSINMACanvas.kaiwa1 = "…博麗の巫女よ。";
-                  tohoSINMACanvas.kaiwa2 = "結界消滅の異変でここにくると";
-                  tohoSINMACanvas.kaiwa3 = "思っていたのだけど…。";
+                  // …博麗の巫女よ。
+                  tohoSINMACanvas.kaiwa1 = "...Hakurei Shrine maiden.";
+                  // 結界消滅の異変でここにくると
+                  tohoSINMACanvas.kaiwa2 = "I thought you'd come here because of";
+                  // 思っていたのだけど…。
+                  tohoSINMACanvas.kaiwa3 = "the barrier's disappearance...";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 3) {
@@ -1843,9 +1894,12 @@ public class ConversationEN implements Conversation {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 5, 1, 0);
-                  tohoSINMACanvas.kaiwa1 = "よかったなアリス。霊夢なら";
-                  tohoSINMACanvas.kaiwa2 = "既に私が撃退しておいたぜ。";
-                  tohoSINMACanvas.kaiwa3 = "ツケは帳消しだな。";
+                  // よかったなアリス。霊夢なら
+                  tohoSINMACanvas.kaiwa1 = "Good for you, Alice.";
+                  // 既に私が撃退しておいたぜ。
+                  tohoSINMACanvas.kaiwa2 = "I already took care of Reimu for you.";
+                  // ツケは帳消しだな。
+                  tohoSINMACanvas.kaiwa3 = "That evens things out.";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 4) {
@@ -1853,9 +1907,12 @@ public class ConversationEN implements Conversation {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 5, 1, 1);
-                  tohoSINMACanvas.kaiwa1 = "ええっ！それってほんとなの？";
-                  tohoSINMACanvas.kaiwa2 = "…どさくさに紛れようとしてる";
-                  tohoSINMACanvas.kaiwa3 = "けど、ツケは消えないわよ？";
+                  // ええっ！それってほんとなの？
+                  tohoSINMACanvas.kaiwa1 = "What?! Is that really true?";
+                  // …どさくさに紛れようとしてる
+                  tohoSINMACanvas.kaiwa2 = "...You're trying to take advantage";
+                  // けど、ツケは消えないわよ？
+                  tohoSINMACanvas.kaiwa3 = "of the situation, but the debt won't go away."; // ???
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 5) {
@@ -1863,7 +1920,8 @@ public class ConversationEN implements Conversation {
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 1);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
                   tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 5, 1, 0);
-                  tohoSINMACanvas.kaiwa1 = "ちぇー。";
+                  // ちぇー。
+                  tohoSINMACanvas.kaiwa1 = "Damn it.";
                   tohoSINMACanvas.kaiwa2 = "";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
@@ -1872,9 +1930,12 @@ public class ConversationEN implements Conversation {
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 2, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 3, -1, 0);
                tohoSINMACanvas.effectIn(1000.0F, 0.0F, 11, 5, 1, 1);
-               tohoSINMACanvas.kaiwa1 = "仕方がないわね…くれぐれも";
-               tohoSINMACanvas.kaiwa2 = "あの方に失礼のないように";
-               tohoSINMACanvas.kaiwa3 = "お願いね。";
+               // 仕方がないわね…くれぐれも
+               tohoSINMACanvas.kaiwa1 = "I suppose there's no helping it...";
+               // あの方に失礼のないように
+               tohoSINMACanvas.kaiwa2 = "Please be careful not to be rude";
+               // お願いね。
+               tohoSINMACanvas.kaiwa3 = "to that person in any way.";
                tohokaiwa.effectflag = 1;
             }
          }
