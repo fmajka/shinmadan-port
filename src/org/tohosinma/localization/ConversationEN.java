@@ -2833,217 +2833,288 @@ public class ConversationEN implements Conversation {
          if (tohoSINMACanvas.peoplebomkind % 2 == 0) {
             if (speechId == 0) {
                if  (tohokaiwa.effectflag == 0) {
-                  tohoSINMACanvas.kaiwa1 = "  それから・・・";
+                  //   それから・・・
+                  tohoSINMACanvas.kaiwa1 = "And then...";
                   tohoSINMACanvas.kaiwa2 = "";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 1) {
                if  (tohokaiwa.effectflag == 0) {
-                  tohoSINMACanvas.kaiwa1 = "  紫  「ようするに、そういうことなの";
-                  tohoSINMACanvas.kaiwa2 = "        よ。」";
+                  //   紫  「ようするに、そういうことなの
+                  tohoSINMACanvas.kaiwa1 = "Yukari:「So basically,";
+                  //         よ。」
+                  tohoSINMACanvas.kaiwa2 = "         that's how it is.」";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 2) {
                if  (tohokaiwa.effectflag == 0) {
-                  tohoSINMACanvas.kaiwa1 = " 霊夢 「ふぅん…幻想郷の立場ねぇ…。」";
-                  tohoSINMACanvas.kaiwa2 = "        ";
+                  //  霊夢 「ふぅん…幻想郷の立場ねぇ…。」
+                  tohoSINMACanvas.kaiwa1 = "Reimu:「Hmm... Gensokyo's";
+                  //         
+                  tohoSINMACanvas.kaiwa2 = "        position, huh?」";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 3) {
                if  (tohokaiwa.effectflag == 0) {
-                  tohoSINMACanvas.kaiwa1 = "  紫  「幻想郷は閉じた世界。";
-                  tohoSINMACanvas.kaiwa2 = "        もし、その根底が覆るほど多くの";
-                  tohoSINMACanvas.kaiwa3 = "        人が流れ込んできたとしたら？」";
+                  //   紫  「幻想郷は閉じた世界。
+                  tohoSINMACanvas.kaiwa1 = "Yukari:「Gensokyo is a closed world.";
+                  //         もし、その根底が覆るほど多くの
+                  tohoSINMACanvas.kaiwa2 = "But what if so many people poured in";
+                  //         人が流れ込んできたとしたら？」
+                  tohoSINMACanvas.kaiwa3 = "that this foundation was overturned?」"; // ?
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 4) {
                if  (tohokaiwa.effectflag == 0) {
-                  tohoSINMACanvas.kaiwa1 = "  紫  「･･･話しすぎたかしらね？";
-                  tohoSINMACanvas.kaiwa2 = "        まぁ、それじゃぁ私は帰るわね。」";
-                  tohoSINMACanvas.kaiwa3 = "        ";
+                  //   紫  「･･･話しすぎたかしらね？
+                  tohoSINMACanvas.kaiwa1 = "Yukari:「...Do I talk too much?"; // ?
+                  //         まぁ、それじゃぁ私は帰るわね。」
+                  tohoSINMACanvas.kaiwa2 = "         Well, I guess I'll";
+                  //         
+                  tohoSINMACanvas.kaiwa3 = "         be heading home now.";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 5) {
                if  (tohokaiwa.effectflag == 0) {
-                  tohoSINMACanvas.kaiwa1 = "  しゅん･･･";
+                  //   しゅん･･･
+                  tohoSINMACanvas.kaiwa1 = " Sigh...";
                   tohoSINMACanvas.kaiwa2 = "";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 6) {
                if  (tohokaiwa.effectflag == 0) {
-                  tohoSINMACanvas.kaiwa1 = " 霊夢 「はぁ、疲れたわね。";
-                  tohoSINMACanvas.kaiwa2 = "        早く神社に帰って寝たいわ〜。」";
-                  tohoSINMACanvas.kaiwa3 = "        ";
+                  //  霊夢 「はぁ、疲れたわね。
+                  tohoSINMACanvas.kaiwa1 = "Reimu:「Haa, I'm so tired.";
+                  //         早く神社に帰って寝たいわ〜。」
+                  tohoSINMACanvas.kaiwa2 = "I just want to get back";
+                  //         
+                  tohoSINMACanvas.kaiwa3 = "to the shrine and sleep〜」";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 7) {
                if  (tohokaiwa.effectflag == 0) {
-                  tohoSINMACanvas.kaiwa1 = " 霊夢 「ん…？ただならぬ気配を感じる";
-                  tohoSINMACanvas.kaiwa2 = "        わね。」";
+                  //  霊夢 「ん…？ただならぬ気配を感じる
+                  tohoSINMACanvas.kaiwa1 = "Reimu:「Hmm...? I sense";
+                  //         わね。」
+                  tohoSINMACanvas.kaiwa2 = "        something unusual.";
+                  //         
                   tohoSINMACanvas.kaiwa3 = "        ";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 8) {
                if  (tohokaiwa.effectflag == 0) {
-                  tohoSINMACanvas.kaiwa1 = " 霊夢 「場所は…私の神社じゃないの！」";
-                  tohoSINMACanvas.kaiwa2 = "        ";
+                  //  霊夢 「場所は…私の神社じゃないの！」
+                  tohoSINMACanvas.kaiwa1 = "Reimu:「This place...";
+                  //         
+                  tohoSINMACanvas.kaiwa2 = "        it can't be my shrine!";
+                  //         
                   tohoSINMACanvas.kaiwa3 = "        ";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 9) {
                if  (tohokaiwa.effectflag == 0) {
-                  tohoSINMACanvas.kaiwa1 = "  彼女の苦難はまだ終わらない";
-                  tohoSINMACanvas.kaiwa2 = "  To Be Continued …";
+                  //   彼女の苦難はまだ終わらない
+                  tohoSINMACanvas.kaiwa1 = "Her troubles aren't over yet";
+                  //   To Be Continued …
+                  tohoSINMACanvas.kaiwa2 = "     To Be Continued...";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 10 && tohokaiwa.effectflag == 0) {
+               //   【ＧＯＯＤ  ＥＮＤ１】
                tohoSINMACanvas.kaiwa1 = "  【ＧＯＯＤ  ＥＮＤ１】";
-               tohoSINMACanvas.kaiwa2 = "流石だね！しかし挑戦はまだ続きます…";
-               tohoSINMACanvas.kaiwa3 = "";
+               // 流石だね！しかし挑戦はまだ続きます…
+               tohoSINMACanvas.kaiwa2 = "Impressive!";
+               tohoSINMACanvas.kaiwa3 = "But one more challenge awaits..."; // But the challenge continues...
                tohokaiwa.effectflag = 1;
             }
          } else if (tohoSINMACanvas.peoplebomkind % 2 == 1) {
             if (speechId == 0) {
                if  (tohokaiwa.effectflag == 0) {
-                  tohoSINMACanvas.kaiwa1 = " 神綺 「ふぅん、なかなかやるじゃない。」";
+                  //  神綺 「ふぅん、なかなかやるじゃない。」
+                  tohoSINMACanvas.kaiwa1 = "Shinki:「Hmm, not half bad.」";
+                  //         
                   tohoSINMACanvas.kaiwa2 = "        ";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 1) {
                if  (tohokaiwa.effectflag == 0) {
-                  tohoSINMACanvas.kaiwa1 = "魔理沙「その姿でいわれても威厳のかけら";
-                  tohoSINMACanvas.kaiwa2 = "        もないぜ。」";
-                  tohoSINMACanvas.kaiwa3 = "";
+                  // 魔理沙「その姿でいわれても威厳のかけら
+                  tohoSINMACanvas.kaiwa1 = "Marisa:「There's not a shred";
+                  //         もないぜ。」
+                  tohoSINMACanvas.kaiwa2 = "         of dignity in that";
+                  tohoSINMACanvas.kaiwa3 = "         appearance.」";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 2) {
                if  (tohokaiwa.effectflag == 0) {
-                  tohoSINMACanvas.kaiwa1 = " 神綺 「ぐぅ。仕方ないわね。」";
-                  tohoSINMACanvas.kaiwa2 = "        ";
+                  //  神綺 「ぐぅ。仕方ないわね。」
+                  tohoSINMACanvas.kaiwa1 = "Shinki:「Ugh. Well, I guess";
+                  //         
+                  tohoSINMACanvas.kaiwa2 = "          I have no choice.」";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 3) {
                if  (tohokaiwa.effectflag == 0) {
-                  tohoSINMACanvas.kaiwa1 = "パチェ「で、結界の話なのだけど…。」";
+                  // パチェ「で、結界の話なのだけど…。」
+                  tohoSINMACanvas.kaiwa1 = "Patchy:「So, about the barrier...」";
+                  //        
                   tohoSINMACanvas.kaiwa2 = "       ";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 4) {
                if  (tohokaiwa.effectflag == 0) {
-                  tohoSINMACanvas.kaiwa1 = " 神綺 「申し訳ないけど、あの結界を私　";
-                  tohoSINMACanvas.kaiwa2 = "        たち魔界人が張ることはできない";
-                  tohoSINMACanvas.kaiwa3 = "        から、」";
+                  //  神綺 「申し訳ないけど、あの結界を私　
+                  tohoSINMACanvas.kaiwa1 = "Shinki:「I'm sorry,";
+                  //         たち魔界人が張ることはできない
+                  tohoSINMACanvas.kaiwa2 = "but we demons can't";
+                  //         から、」
+                  tohoSINMACanvas.kaiwa3 = "restore that barrier.」";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 5) {
                if  (tohokaiwa.effectflag == 0) {
-                  tohoSINMACanvas.kaiwa1 = " 神綺 「巫女本人がいないとどうしようも";
-                  tohoSINMACanvas.kaiwa2 = "        ないのよ。」";
-                  tohoSINMACanvas.kaiwa3 = "        ";
+                  //  神綺 「巫女本人がいないとどうしようも
+                  tohoSINMACanvas.kaiwa1 = "Shinki:「Without the";
+                  //         ないのよ。」
+                  tohoSINMACanvas.kaiwa2 = "shrine maiden herself,";
+                  //         
+                  tohoSINMACanvas.kaiwa3 = "there's nothing we can do.」";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 6) {
                if  (tohokaiwa.effectflag == 0) {
-                  tohoSINMACanvas.kaiwa1 = "パチェ「では、せめて行き来を自重するよ";
-                  tohoSINMACanvas.kaiwa2 = "        うに言ってはもらえないでしょう";
-                  tohoSINMACanvas.kaiwa3 = "         か？」";
+                  // パチェ「では、せめて行き来を自重するよ
+                  tohoSINMACanvas.kaiwa1 = "Patchy:「Could you at least";
+                  //         うに言ってはもらえないでしょう
+                  tohoSINMACanvas.kaiwa2 = "tell them to refrain from";
+                  //          か？」
+                  tohoSINMACanvas.kaiwa3 = "going outside the Demon World?」";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 7) {
                if  (tohokaiwa.effectflag == 0) {
-                  tohoSINMACanvas.kaiwa1 = " 神綺 「そうね、それなら問題ないわ。」";
+                  //  神綺 「そうね、それなら問題ないわ。」
+                  tohoSINMACanvas.kaiwa1 = "Shinki:「Yes, no problem with that.」"; // ?
+                  //         
                   tohoSINMACanvas.kaiwa2 = "        ";
+                  //         
                   tohoSINMACanvas.kaiwa3 = "        ";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 8) {
                if  (tohokaiwa.effectflag == 0) {
-                  tohoSINMACanvas.kaiwa1 = "魔理沙「よし、これにて";
-                  tohoSINMACanvas.kaiwa2 = "        ミッションコンプリートだな！」";
+                  // 魔理沙「よし、これにて
+                  tohoSINMACanvas.kaiwa1 = "Marisa:「Alright then,";
+                  //         ミッションコンプリートだな！」
+                  tohoSINMACanvas.kaiwa2 = "       MISSION COMPLETE!」";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 9) {
                if  (tohokaiwa.effectflag == 0) {
-                  tohoSINMACanvas.kaiwa1 = "  ・・・。";
+                  //   ・・・。
+                  tohoSINMACanvas.kaiwa1 = "...";
+                  //         
                   tohoSINMACanvas.kaiwa2 = "        ";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 10) {
                if  (tohokaiwa.effectflag == 0) {
-                  tohoSINMACanvas.kaiwa1 = "パチェ「それじゃ、私はここで。」";
-                  tohoSINMACanvas.kaiwa2 = "        ";
+                  // パチェ「それじゃ、私はここで。」
+                  tohoSINMACanvas.kaiwa1 = "Patchy:「Alright then,"; // Alright then, I'll be off now.
+                  //         
+                  tohoSINMACanvas.kaiwa2 = "         I'll be off now.」";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 11) {
                if  (tohokaiwa.effectflag == 0) {
-                  tohoSINMACanvas.kaiwa1 = "魔理沙「わざわざ付き合ってくれて";
-                  tohoSINMACanvas.kaiwa2 = "        感謝だぜ。」";
+                  // 魔理沙「わざわざ付き合ってくれて
+                  tohoSINMACanvas.kaiwa1 = "Marisa:「Thanks for ";
+                  //         感謝だぜ。」
+                  tohoSINMACanvas.kaiwa2 = "        sticking around with me.」";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 12) {
                if  (tohokaiwa.effectflag == 0) {
-                  tohoSINMACanvas.kaiwa1 = "魔理沙「そうだな、こんどプレゼントでも";
-                  tohoSINMACanvas.kaiwa2 = "        やるよ。」";
-                  tohoSINMACanvas.kaiwa3 = "";
+                  // 魔理沙「そうだな、こんどプレゼントでも
+                  tohoSINMACanvas.kaiwa1 = "Marisa:「That's right,"; // ?
+                  //         やるよ。」
+                  tohoSINMACanvas.kaiwa2 = "         I'll have to get you";
+                  tohoSINMACanvas.kaiwa3 = "         a present next time.」";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 13) {
                if  (tohokaiwa.effectflag == 0) {
-                  tohoSINMACanvas.kaiwa1 = "パチェ「あ、え、いえ、別にそんなに";
-                  tohoSINMACanvas.kaiwa2 = "        大したことじゃないしかまわない";
-                  tohoSINMACanvas.kaiwa3 = "        わよ。」";
+                  // パチェ「あ、え、いえ、別にそんなに
+                  tohoSINMACanvas.kaiwa1 = "Patchy:「Ah, um, no,";
+                  //         大したことじゃないしかまわない
+                  tohoSINMACanvas.kaiwa2 = "         it's no big deal,";
+                  //         わよ。」
+                  tohoSINMACanvas.kaiwa3 = "         so it's fine.」";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 14) {
                if  (tohokaiwa.effectflag == 0) {
-                  tohoSINMACanvas.kaiwa1 = "パチェ「きにしないでというかべつに…。」";
-                  tohoSINMACanvas.kaiwa2 = "        ";
+                  // パチェ「きにしないでというかべつに…。」
+                  tohoSINMACanvas.kaiwa1 = "Patchy:「Don't worry about it,";
+                  //         
+                  tohoSINMACanvas.kaiwa2 = "         it's nothing...」";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 15) {
                if  (tohokaiwa.effectflag == 0) {
-                  tohoSINMACanvas.kaiwa1 = "魔理沙「…何をテンパってるんだ？";
-                  tohoSINMACanvas.kaiwa2 = "        そうだな〜新開発、体がメタル化";
-                  tohoSINMACanvas.kaiwa3 = "        するきのこでも…」";
+                  // 魔理沙「…何をテンパってるんだ？
+                  tohoSINMACanvas.kaiwa1 = "Marisa:「What are you freaking out about?";
+                  //         そうだな〜新開発、体がメタル化
+                  tohoSINMACanvas.kaiwa2 = "Oh, right, recently I found a mushroom";
+                  //         するきのこでも…」
+                  tohoSINMACanvas.kaiwa3 = "that turns your body into metal...」";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 16) {
                if  (tohokaiwa.effectflag == 0) {
-                  tohoSINMACanvas.kaiwa1 = "パチェ「いらないわよ！」";
+                  // パチェ「いらないわよ！」
+                  tohoSINMACanvas.kaiwa1 = "Patchy:「I don't need it!」";
+                  //         
                   tohoSINMACanvas.kaiwa2 = "        ";
                   tohoSINMACanvas.kaiwa3 = "";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 17) {
                if  (tohokaiwa.effectflag == 0) {
-                  tohoSINMACanvas.kaiwa1 = "  そんなこんなでパチュリーと別れ、";
-                  tohoSINMACanvas.kaiwa2 = "  一人神社へと向かう魔理沙であった";
-                  tohoSINMACanvas.kaiwa3 = "  のだが…？";
+                  // そんなこんなでパチュリーと別れ、
+                  tohoSINMACanvas.kaiwa1 = "And so, parting ways with Patchouli,";
+                  // 一人神社へと向かう魔理沙であった
+                  tohoSINMACanvas.kaiwa2 = "Marisa headed to the shrine alone,";
+                  // のだが…？
+                  tohoSINMACanvas.kaiwa3 = "but...";
                   tohokaiwa.effectflag = 1;
                }
             } else if (speechId == 18 && tohokaiwa.effectflag == 0) {
+               //   【ＨＡＰＰＹ  ＥＮＤ】
                tohoSINMACanvas.kaiwa1 = "  【ＨＡＰＰＹ  ＥＮＤ】";
-               tohoSINMACanvas.kaiwa2 = "流石だね！神社で魔理沙の見たものとは…？";
-               tohoSINMACanvas.kaiwa3 = "";
+               // 流石だね！神社で魔理沙の見たものとは…？
+               tohoSINMACanvas.kaiwa2 = " Impressive! But what did Marisa";
+               tohoSINMACanvas.kaiwa3 = "      see at the shrine...?";
                tohokaiwa.effectflag = 1;
             }
          }
       } else if (tohoSINMACanvas.peoplebomkind % 2 == 0) {
          if (speechId == 0) {
             if  (tohokaiwa.effectflag == 0) {
+               //   それから・・・
                tohoSINMACanvas.kaiwa1 = "  それから・・・";
                tohoSINMACanvas.kaiwa2 = "";
                tohoSINMACanvas.kaiwa3 = "";
@@ -3051,55 +3122,76 @@ public class ConversationEN implements Conversation {
             }
          } else if (speechId == 1) {
             if  (tohokaiwa.effectflag == 0) {
+               // 霊夢 「魔界からどんどん人が来ている
                tohoSINMACanvas.kaiwa1 = " 霊夢 「魔界からどんどん人が来ている";
+               //         わ…。」
                tohoSINMACanvas.kaiwa2 = "        わ…。」";
                tohoSINMACanvas.kaiwa3 = "";
                tohokaiwa.effectflag = 1;
             }
          } else if (speechId == 2) {
             if  (tohokaiwa.effectflag == 0) {
+               //  霊夢 「しかもやりたい放題じゃない！
                tohoSINMACanvas.kaiwa1 = " 霊夢 「しかもやりたい放題じゃない！";
+               //         あの魔界神はどんな教育をしてる
                tohoSINMACanvas.kaiwa2 = "        あの魔界神はどんな教育をしてる";
+               //         のよ！」
                tohoSINMACanvas.kaiwa3 = "        のよ！」";
                tohokaiwa.effectflag = 1;
             }
          } else if (speechId == 3) {
             if  (tohokaiwa.effectflag == 0) {
+               //   紫  「それは、貴方の力不足が原因じゃ
                tohoSINMACanvas.kaiwa1 = "  紫  「それは、貴方の力不足が原因じゃ";
+               //         なくて？」
                tohoSINMACanvas.kaiwa2 = "        なくて？」";
+               //         
                tohoSINMACanvas.kaiwa3 = "        ";
                tohokaiwa.effectflag = 1;
             }
          } else if (speechId == 4) {
             if  (tohokaiwa.effectflag == 0) {
+               //  霊夢 「ぐっ。だ、だから今修行してる
                tohoSINMACanvas.kaiwa1 = " 霊夢 「ぐっ。だ、だから今修行してる";
+               //         じゃない！」
                tohoSINMACanvas.kaiwa2 = "        じゃない！」";
+               //         
                tohoSINMACanvas.kaiwa3 = "        ";
                tohokaiwa.effectflag = 1;
             }
          } else if (speechId == 5) {
             if  (tohokaiwa.effectflag == 0) {
+               //   紫  「はいはい、手遅れにならないよう
                tohoSINMACanvas.kaiwa1 = "  紫  「はいはい、手遅れにならないよう";
+               //         頑張るのよ。」
                tohoSINMACanvas.kaiwa2 = "        頑張るのよ。」";
+               //         
                tohoSINMACanvas.kaiwa3 = "        ";
                tohokaiwa.effectflag = 1;
             }
          } else if (speechId == 6) {
             if  (tohokaiwa.effectflag == 0) {
+               //  霊夢 「あんたは何でそう他人事なのよ…」
                tohoSINMACanvas.kaiwa1 = " 霊夢 「あんたは何でそう他人事なのよ…」";
+               //         
                tohoSINMACanvas.kaiwa2 = "        ";
+               //         
                tohoSINMACanvas.kaiwa3 = "        ";
                tohokaiwa.effectflag = 1;
             }
          } else if (speechId == 7) {
             if  (tohokaiwa.effectflag == 0) {
+               //   霊夢の修行の日々が始まったので
                tohoSINMACanvas.kaiwa1 = "  霊夢の修行の日々が始まったので";
+               //   あった…。
                tohoSINMACanvas.kaiwa2 = "  あった…。";
                tohoSINMACanvas.kaiwa3 = "";
                tohokaiwa.effectflag = 1;
             }
          } else if (speechId == 8 && tohokaiwa.effectflag == 0) {
+            //   【ＢＡＤ  ＥＮＤ】
             tohoSINMACanvas.kaiwa1 = "  【ＢＡＤ  ＥＮＤ】";
+            //   ノーコンで魔界神をやっつけよう！
             tohoSINMACanvas.kaiwa2 = "  ノーコンで魔界神をやっつけよう！";
             tohoSINMACanvas.kaiwa3 = "";
             tohokaiwa.effectflag = 1;
@@ -3107,49 +3199,66 @@ public class ConversationEN implements Conversation {
       } else if (tohoSINMACanvas.peoplebomkind % 2 == 1) {
          if (speechId == 0) {
             if  (tohokaiwa.effectflag == 0) {
+               // 魔理沙「まずい、ズラかるぜ！」
                tohoSINMACanvas.kaiwa1 = "魔理沙「まずい、ズラかるぜ！」";
+               //         
                tohoSINMACanvas.kaiwa2 = "        ";
                tohoSINMACanvas.kaiwa3 = "";
                tohokaiwa.effectflag = 1;
             }
          } else if (speechId == 1) {
             if  (tohokaiwa.effectflag == 0) {
+               // パチェ「私は悪くないのに〜！」
                tohoSINMACanvas.kaiwa1 = "パチェ「私は悪くないのに〜！」";
+               //         
                tohoSINMACanvas.kaiwa2 = "        ";
                tohoSINMACanvas.kaiwa3 = "";
                tohokaiwa.effectflag = 1;
             }
          } else if (speechId == 2) {
             if  (tohokaiwa.effectflag == 0) {
+               //  神綺 「悪は去った。私の大勝利ね！」
                tohoSINMACanvas.kaiwa1 = " 神綺 「悪は去った。私の大勝利ね！」";
+               //         
                tohoSINMACanvas.kaiwa2 = "        ";
                tohoSINMACanvas.kaiwa3 = "";
                tohokaiwa.effectflag = 1;
             }
          } else if (speechId == 3) {
             if  (tohokaiwa.effectflag == 0) {
+               //  神綺 「…あれ、なんか忘れてるような」
                tohoSINMACanvas.kaiwa1 = " 神綺 「…あれ、なんか忘れてるような」";
+               //         …まぁ、いいわよね。」
                tohoSINMACanvas.kaiwa2 = "        …まぁ、いいわよね。」";
                tohoSINMACanvas.kaiwa3 = "";
                tohokaiwa.effectflag = 1;
             }
          } else if (speechId == 4) {
             if  (tohokaiwa.effectflag == 0) {
+               //   見事盗賊を撃退し、
                tohoSINMACanvas.kaiwa1 = "  見事盗賊を撃退し、";
+               //   魔界の平和は守られた。      
                tohoSINMACanvas.kaiwa2 = "  魔界の平和は守られた。      ";
+               //         
                tohoSINMACanvas.kaiwa3 = "        ";
                tohokaiwa.effectflag = 1;
             }
          } else if (speechId == 5) {
             if  (tohokaiwa.effectflag == 0) {
+               //   ありがとう、僕らのたくましい魔界神！
                tohoSINMACanvas.kaiwa2 = "  ありがとう、僕らのたくましい魔界神！";
+               //         
                tohoSINMACanvas.kaiwa1 = "        ";
+               //         
                tohoSINMACanvas.kaiwa3 = "        ";
                tohokaiwa.effectflag = 1;
             }
          } else if (speechId == 6 && tohokaiwa.effectflag == 0) {
+            //   【ＭＡＫＡＩ  ＥＮＤ】
             tohoSINMACanvas.kaiwa1 = "  【ＭＡＫＡＩ  ＥＮＤ】";
+            //   ざんねん！！  まりさの  ぼうけんは
             tohoSINMACanvas.kaiwa2 = "  ざんねん！！  まりさの  ぼうけんは";
+            //   ここでおわってしまった！
             tohoSINMACanvas.kaiwa3 = "  ここでおわってしまった！";
             tohokaiwa.effectflag = 1;
          }
