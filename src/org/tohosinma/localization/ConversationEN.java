@@ -2926,7 +2926,7 @@ public class ConversationEN implements Conversation {
                }
             } else if (speechId == 10 && tohokaiwa.effectflag == 0) {
                //   【ＧＯＯＤ  ＥＮＤ１】
-               tohoSINMACanvas.kaiwa1 = "  【ＧＯＯＤ  ＥＮＤ１】";
+               tohoSINMACanvas.kaiwa1 = "  【ＧＯＯＤ  ＥＮＤ】";
                // 流石だね！しかし挑戦はまだ続きます…
                tohoSINMACanvas.kaiwa2 = "Impressive!";
                tohoSINMACanvas.kaiwa3 = "But one more challenge awaits..."; // But the challenge continues...
@@ -3115,7 +3115,7 @@ public class ConversationEN implements Conversation {
          if (speechId == 0) {
             if  (tohokaiwa.effectflag == 0) {
                //   それから・・・
-               tohoSINMACanvas.kaiwa1 = "  それから・・・";
+               tohoSINMACanvas.kaiwa1 = "  Later...";
                tohoSINMACanvas.kaiwa2 = "";
                tohoSINMACanvas.kaiwa3 = "";
                tohokaiwa.effectflag = 1;
@@ -3123,28 +3123,28 @@ public class ConversationEN implements Conversation {
          } else if (speechId == 1) {
             if  (tohokaiwa.effectflag == 0) {
                // 霊夢 「魔界からどんどん人が来ている
-               tohoSINMACanvas.kaiwa1 = " 霊夢 「魔界からどんどん人が来ている";
+               tohoSINMACanvas.kaiwa1 = "Reimu:「Folks keep pouring in";
                //         わ…。」
-               tohoSINMACanvas.kaiwa2 = "        わ…。」";
+               tohoSINMACanvas.kaiwa2 = "        from the Demon Realm...」";
                tohoSINMACanvas.kaiwa3 = "";
                tohokaiwa.effectflag = 1;
             }
          } else if (speechId == 2) {
             if  (tohokaiwa.effectflag == 0) {
                //  霊夢 「しかもやりたい放題じゃない！
-               tohoSINMACanvas.kaiwa1 = " 霊夢 「しかもやりたい放題じゃない！";
+               tohoSINMACanvas.kaiwa1 = "Reimu:「And they just do whatever they want!"; // ?
                //         あの魔界神はどんな教育をしてる
-               tohoSINMACanvas.kaiwa2 = "        あの魔界神はどんな教育をしてる";
+               tohoSINMACanvas.kaiwa2 = "        What kind of education did that";
                //         のよ！」
-               tohoSINMACanvas.kaiwa3 = "        のよ！」";
+               tohoSINMACanvas.kaiwa3 = "        Demon Realm god give them?!」";
                tohokaiwa.effectflag = 1;
             }
          } else if (speechId == 3) {
             if  (tohokaiwa.effectflag == 0) {
                //   紫  「それは、貴方の力不足が原因じゃ
-               tohoSINMACanvas.kaiwa1 = "  紫  「それは、貴方の力不足が原因じゃ";
+               tohoSINMACanvas.kaiwa1 = "Yukari:「Isn't all of that because";
                //         なくて？」
-               tohoSINMACanvas.kaiwa2 = "        なくて？」";
+               tohoSINMACanvas.kaiwa2 = "         you weren't capable enough?」";
                //         
                tohoSINMACanvas.kaiwa3 = "        ";
                tohokaiwa.effectflag = 1;
@@ -3152,9 +3152,9 @@ public class ConversationEN implements Conversation {
          } else if (speechId == 4) {
             if  (tohokaiwa.effectflag == 0) {
                //  霊夢 「ぐっ。だ、だから今修行してる
-               tohoSINMACanvas.kaiwa1 = " 霊夢 「ぐっ。だ、だから今修行してる";
+               tohoSINMACanvas.kaiwa1 = "Reimu:「Ugh. That's why I'm training";
                //         じゃない！」
-               tohoSINMACanvas.kaiwa2 = "        じゃない！」";
+               tohoSINMACanvas.kaiwa2 = "        right now!」";
                //         
                tohoSINMACanvas.kaiwa3 = "        ";
                tohokaiwa.effectflag = 1;
@@ -3162,9 +3162,9 @@ public class ConversationEN implements Conversation {
          } else if (speechId == 5) {
             if  (tohokaiwa.effectflag == 0) {
                //   紫  「はいはい、手遅れにならないよう
-               tohoSINMACanvas.kaiwa1 = "  紫  「はいはい、手遅れにならないよう";
+               tohoSINMACanvas.kaiwa1 = "Yukari:「Yes, yes, try harder";
                //         頑張るのよ。」
-               tohoSINMACanvas.kaiwa2 = "        頑張るのよ。」";
+               tohoSINMACanvas.kaiwa2 = "         before it's too late.」";
                //         
                tohoSINMACanvas.kaiwa3 = "        ";
                tohokaiwa.effectflag = 1;
@@ -3172,9 +3172,9 @@ public class ConversationEN implements Conversation {
          } else if (speechId == 6) {
             if  (tohokaiwa.effectflag == 0) {
                //  霊夢 「あんたは何でそう他人事なのよ…」
-               tohoSINMACanvas.kaiwa1 = " 霊夢 「あんたは何でそう他人事なのよ…」";
+               tohoSINMACanvas.kaiwa1 = "Reimu:「Why do you act like";
                //         
-               tohoSINMACanvas.kaiwa2 = "        ";
+               tohoSINMACanvas.kaiwa2 = "        it's none of your business...」";
                //         
                tohoSINMACanvas.kaiwa3 = "        ";
                tohokaiwa.effectflag = 1;
@@ -3182,9 +3182,9 @@ public class ConversationEN implements Conversation {
          } else if (speechId == 7) {
             if  (tohokaiwa.effectflag == 0) {
                //   霊夢の修行の日々が始まったので
-               tohoSINMACanvas.kaiwa1 = "  霊夢の修行の日々が始まったので";
+               tohoSINMACanvas.kaiwa1 = "  Thus began Reimu's days";
                //   あった…。
-               tohoSINMACanvas.kaiwa2 = "  あった…。";
+               tohoSINMACanvas.kaiwa2 = "  of training...";
                tohoSINMACanvas.kaiwa3 = "";
                tohokaiwa.effectflag = 1;
             }
@@ -3192,7 +3192,7 @@ public class ConversationEN implements Conversation {
             //   【ＢＡＤ  ＥＮＤ】
             tohoSINMACanvas.kaiwa1 = "  【ＢＡＤ  ＥＮＤ】";
             //   ノーコンで魔界神をやっつけよう！
-            tohoSINMACanvas.kaiwa2 = "  ノーコンで魔界神をやっつけよう！";
+            tohoSINMACanvas.kaiwa2 = "Defeat the demon god without using continues!";
             tohoSINMACanvas.kaiwa3 = "";
             tohokaiwa.effectflag = 1;
          }
@@ -3200,7 +3200,7 @@ public class ConversationEN implements Conversation {
          if (speechId == 0) {
             if  (tohokaiwa.effectflag == 0) {
                // 魔理沙「まずい、ズラかるぜ！」
-               tohoSINMACanvas.kaiwa1 = "魔理沙「まずい、ズラかるぜ！」";
+               tohoSINMACanvas.kaiwa1 = "Marisa:「Oh no, I lost!」";
                //         
                tohoSINMACanvas.kaiwa2 = "        ";
                tohoSINMACanvas.kaiwa3 = "";
@@ -3209,7 +3209,7 @@ public class ConversationEN implements Conversation {
          } else if (speechId == 1) {
             if  (tohokaiwa.effectflag == 0) {
                // パチェ「私は悪くないのに〜！」
-               tohoSINMACanvas.kaiwa1 = "パチェ「私は悪くないのに〜！」";
+               tohoSINMACanvas.kaiwa1 = "Patchy:「It's not my fault〜!」";
                //         
                tohoSINMACanvas.kaiwa2 = "        ";
                tohoSINMACanvas.kaiwa3 = "";
@@ -3218,27 +3218,27 @@ public class ConversationEN implements Conversation {
          } else if (speechId == 2) {
             if  (tohokaiwa.effectflag == 0) {
                //  神綺 「悪は去った。私の大勝利ね！」
-               tohoSINMACanvas.kaiwa1 = " 神綺 「悪は去った。私の大勝利ね！」";
+               tohoSINMACanvas.kaiwa1 = "Shinki:「Evil is gone.";
                //         
-               tohoSINMACanvas.kaiwa2 = "        ";
+               tohoSINMACanvas.kaiwa2 = "         A great victory for me!」";
                tohoSINMACanvas.kaiwa3 = "";
                tohokaiwa.effectflag = 1;
             }
          } else if (speechId == 3) {
             if  (tohokaiwa.effectflag == 0) {
                //  神綺 「…あれ、なんか忘れてるような」
-               tohoSINMACanvas.kaiwa1 = " 神綺 「…あれ、なんか忘れてるような」";
+               tohoSINMACanvas.kaiwa1 = "Shinki:「...Huh, I feel like";
                //         …まぁ、いいわよね。」
-               tohoSINMACanvas.kaiwa2 = "        …まぁ、いいわよね。」";
-               tohoSINMACanvas.kaiwa3 = "";
+               tohoSINMACanvas.kaiwa2 = "         I forgot something.」";
+               tohoSINMACanvas.kaiwa3 = "         ...Well, it's fine, I guess.」";
                tohokaiwa.effectflag = 1;
             }
          } else if (speechId == 4) {
             if  (tohokaiwa.effectflag == 0) {
                //   見事盗賊を撃退し、
-               tohoSINMACanvas.kaiwa1 = "  見事盗賊を撃退し、";
+               tohoSINMACanvas.kaiwa1 = " The thieves were successfully repelled,";
                //   魔界の平和は守られた。      
-               tohoSINMACanvas.kaiwa2 = "  魔界の平和は守られた。      ";
+               tohoSINMACanvas.kaiwa2 = " and peace in the Demon Realm was preserved.";
                //         
                tohoSINMACanvas.kaiwa3 = "        ";
                tohokaiwa.effectflag = 1;
@@ -3246,7 +3246,7 @@ public class ConversationEN implements Conversation {
          } else if (speechId == 5) {
             if  (tohokaiwa.effectflag == 0) {
                //   ありがとう、僕らのたくましい魔界神！
-               tohoSINMACanvas.kaiwa2 = "  ありがとう、僕らのたくましい魔界神！";
+               tohoSINMACanvas.kaiwa2 = " Thank you, our mighty demon god!";
                //         
                tohoSINMACanvas.kaiwa1 = "        ";
                //         
@@ -3257,9 +3257,9 @@ public class ConversationEN implements Conversation {
             //   【ＭＡＫＡＩ  ＥＮＤ】
             tohoSINMACanvas.kaiwa1 = "  【ＭＡＫＡＩ  ＥＮＤ】";
             //   ざんねん！！  まりさの  ぼうけんは
-            tohoSINMACanvas.kaiwa2 = "  ざんねん！！  まりさの  ぼうけんは";
+            tohoSINMACanvas.kaiwa2 = " Too bad!!";
             //   ここでおわってしまった！
-            tohoSINMACanvas.kaiwa3 = "  ここでおわってしまった！";
+            tohoSINMACanvas.kaiwa3 = " Marisa's adventure ends here!";
             tohokaiwa.effectflag = 1;
          }
       }
